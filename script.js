@@ -117,15 +117,15 @@ document.addEventListener("DOMContentLoaded", () => {
   loadData();
 
   let instaSlide = document.getElementById("insta-slider");
-  function scrollRight() {
+  function scrollR() {
     const scrollAmount = instaSlide.querySelector("img").clientWidth;
     instaSlide.scrollLeft += scrollAmount;
   }
-  function scrollLeft() {
+  function scrollL() {
     const scrollAmount = instaSlide.querySelector("img").clientWidth;
     instaSlide.scrollLeft += -scrollAmount;
   }
 
-  window.scrollLeft = scrollLeft;
-  window.scrollRight = scrollRight;
+  window.scrollL = scrollL;
+  window.scrollR = scrollR;
 });
