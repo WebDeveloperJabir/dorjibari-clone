@@ -10,6 +10,15 @@
 </head>
 
 <body>
+    <header id="header">
+        <!-- Will be inserted by JS -->
+    </header>
+    <ul class="nav" id="nav">
+        <!-- Will be inserted by JS -->
+    </ul>
+    <nav class="second-nav" id="second-nav">
+        <!-- Will be inserted by JS -->
+    </nav>
     <p class="category-path">Home > PANJABI</p>
     <div class="category">
         <div class="filter">
@@ -22,49 +31,121 @@
             <input type="checkbox" name="" id="">
             <label for="">Out Of Stock(<span>88</span>)</label>
             <br><br><br>
-            <h4>Price</h4>
+            <h4>PRICE</h4>
             <hr>
-            <input type="range" name="" id="">
-            <div>
+            <div class="slider-container">
+                <div class="slider-track"></div>
+                <div class="slider-range" id="slider-range"></div>
+
+                <input type="range" id="min-slider" min="0" max="1000" value="100">
+
+                <input type="range" id="max-slider" min="0" max="1000" value="900">
+            </div>
+            <div class="price-range">
                 <div>
-                    <input type="text" name="" id="">
+                    ৳<input type="number" name="" id="min-value" value="0">
                 </div>
-                <span>to</span>
+                <span style="font-size: 12px;">to</span>
                 <div>
-                    <input type="text" name="" id="">
+                    ৳<input type="number" name="" id="max-value" value="0">
                 </div>
             </div>
-            <button>APPLY</button>
+            <button class="filter-apply">APPLY</button>
         </div>
         <div class="products-place">
-            <img src="images/Panjabi-Banner.webp" alt="">
-            <h1>PANJABI</h1>
-            <p>Elevate your traditional and casual wardrobe with Dorjibari’s Men’s Panjabi Collection. Designed with
-                comfort and style
-                in mind, our panjabis feature quality fabrics and modern patterns that blend tradition with contemporary
-                fashion.
-                Perfect for Eid, gatherings, and daily wear, these panjabis are crafted for a refined look and
-                comfortable fit.
-                Available in a variety of colors, styles, and sizes, shop the best panjabi styles online in Bangladesh
-                with fast
-                delivery and easy ordering. Discover your perfect panjabi at Dorjibari today.</p>
-            <hr>
             <div>
-                <div>
+                <img src="images/Panjabi-Banner.webp" alt="">
+            </div>
+            <h1>PANJABI</h1>
+            <p class="products-place-text">
+                <i>
+                    Elevate your traditional and casual wardrobe with Dorjibari’s Men’s Panjabi Collection. Designed
+                    with
+                    comfort and style
+                    in mind, our panjabis feature quality fabrics and modern patterns that blend tradition with
+                    contemporary
+                    fashion.
+                    Perfect for Eid, gatherings, and daily wear, these panjabis are crafted for a refined look and
+                    comfortable fit.
+                    Available in a variety of colors, styles, and sizes, shop the best panjabi styles online in
+                    Bangladesh
+                    with fast
+                    delivery and easy ordering. Discover your perfect panjabi at Dorjibari today.
+                </i>
+            </p>
+            <hr>
+            <div class="product-filter">
+                <div class="view-as-filter">
                     <span>VIEW AS</span>
+                    <div class="three-image-sign">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="two-image-sign" style="width: 19px;">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="two-image-sign" style="width: 28px;">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="two-image-sign" style="width: 36px;">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-                <div>
+                <div style="margin-left: auto;"></div>
+                <div class="items-per-page" style="margin-right: 30px;">
                     <span>ITEMS PER PAGE</span>
-                    <select name="" id="">
-                        <option value="">Featured</option>
-                    </select>
+                    <div>
+                        <ul id="size-dropdown">
+                            <li>10</li>
+                            <li>15</li>
+                            <li>20</li>
+                            <li>25</li>
+                            <li>30</li>
+                            <li>50</li>
+                        </ul>
+                        <span id="size-dropdown-show">20</span>
+                        <button onclick="showDropDown('size-dropdown-button', 'size-dropdown')">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 217.5 127.7"
+                                id="size-dropdown-button">
+                                <path d="m9.2 9.7 99.6 99.6L208.2 9.2"
+                                    style="fill:none;stroke:#969696;stroke-width:26;stroke-miterlimit:10" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div>
+                <div class="items-per-page">
                     <span>SORT BY</span>
-                    <select name="" id=""></select>
+                    <div>
+                        <ul id="sort-dropdown">
+                            <li>Featured</li>
+                            <li>Most relevant</li>
+                            <li>Best selling</li>
+                            <li>Alphabetically, A-Z</li>
+                            <li>Alphabetically, Z-A</li>
+                            <li>Price, low to high</li>
+                            <li>Price, high to low</li>
+                            <li>Date, old to new</li>
+                            <li>Date, new to old</li>
+                        </ul>
+                        <span id="sort-dropdown-show">20</span>
+                        <button onclick="showDropDown('sort-dropdown-button', 'sort-dropdown')">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 217.5 127.7"
+                                id="sort-dropdown-button">
+                                <path d="m9.2 9.7 99.6 99.6L208.2 9.2"
+                                    style="fill:none;stroke:#969696;stroke-width:26;stroke-miterlimit:10" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="home-products">
+            <div class="home-products product-page">
                 <div>
                     <div>
                         <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
@@ -106,8 +187,18 @@
                     <p>Tk 2,890.00</p>
                 </div>
             </div>
+            <p class="show-more-products">Showing 1 -50 of 233 total</p>
+            <div class="show-more-tracker">
+                <div class="show-more-slider"></div>
+            </div>
+            <button class="show-more-products-button">SHOW MORE</button>
         </div>
     </div>
+    <footer id="footer">
+        <!-- Will be inserted by JS -->
+    </footer>
+    <script src="common.js"></script>
+    <script src="product.js"></script>
 </body>
 
 </html>
