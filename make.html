@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: red;">
+    <div class="search-options left-sidebar">
+        <div class="top-content">
+            <p class="title">Search</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="sidebar-cross"
+                onclick="isLoginOpen = false; showLogin();">
+                <path
+                    d="M38.98 6.97a2 2 0 0 0-1.4.62L24 21.17 10.41 7.6a2 2 0 0 0-1.43-.61 2 2 0 0 0-1.4 3.43L21.19 24 7.57 37.59a2 2 0 1 0 2.83 2.82L24 26.83 37.59 40.4a2 2 0 1 0 2.82-2.82L26.83 24 40.4 10.41a2 2 0 0 0-1.43-3.44" />
+            </svg>
+        </div>
+        <br>
+        <div class="icon-input">
+            <input type="text" name="" id="" placeholder="Search products...">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                    <path
+                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                        style="fill:#232323;stroke:#232323;stroke-miterlimit:10" />
+                </svg>
+            </button>
+        </div>
+        <br>
+        <p class="bold">TRENDING NOW</p>
+        <div class="hr" style="background-color: #b9b9b9; margin-bottom: 15px;"></div>
+        <div class="search-suggestions-place" id="search-suggestions">
+            <script>
+                let dom = ``, el = ``;
+                let arr = ['panjabi', 'casual shirt', 'formal shirt', 'short sleeve polo', 'belt', 'jeans', 'pant', 't-shirt', 'tie'], length = arr.length;
+                for (let i = 0; i < length; i++) {
+                    el = `<div class="search-suggestions">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                <path
+                                    d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                    style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                            </svg>
+                            <p>${arr[i]}</p>
+                        </div>`
+                    dom += el;
+                }
+                document.getElementById('search-suggestions').innerHTML = dom;
+            </script>
+        </div>
+        <br>
+        <p class="bold">POPULAR PRODUCTS</p>
+        <div class="hr" style="background-color: #b9b9b9; margin-bottom: 15px;"></div>
+        <div class="search-products">
+            <div class="product-card">
+                <div>
+                    <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
+                        alt="Cloth">
+                </div>
+                <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                <p>Tk 2,890.00</p>
+            </div>
+            <div class="product-card">
+                <div>
+                    <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
+                        alt="Cloth">
+                </div>
+                <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                <p>Tk 2,890.00</p>
+            </div>
+            <div class="product-card">
+                <div>
+                    <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
+                        alt="Cloth">
+                </div>
+                <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                <p>Tk 2,890.00</p>
+            </div>
+            <div class="product-card">
+                <div>
+                    <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
+                        alt="Cloth">
+                </div>
+                <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                <p>Tk 2,890.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

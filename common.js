@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <path
                             d="M20 6V5a5 5 0 0 0-10 0v1H4v24h22V6zm-8-1a3 3 0 1 1 6 0v1h-6zm12 23H6V8h4v3h2V8h6v3h2V8h4z" />
                     </svg>
-                    <button class="home-links" style="padding: 0; border: none; background: none;">Shopping
+                    <button class="home-links" style="padding: 0; border: none; background-color: white;" onclick="showShoppingCart()">Shopping
                         Cart</button> <span id="shopping-cart-count">0</span>
                 </div>
                 <div>
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </svg>
                     <a href="#" class="home-links">My Wish List</a>
                 </div>
-                <a href="" class="home-links" style="margin-top: 2px;">Sign in or Create an Account</a>
+                <button class="home-links" style="margin-bottom: 2px; padding: 0; border: none; background-color: white;" onclick="showLogin()">Sign in or Create an Account</button>
             </div>
         </div>`;
   let navbar = `<li><a href="">HOME</a></li>
@@ -418,10 +418,75 @@ document.addEventListener("DOMContentLoaded", () => {
             class="footer-image">
         <h5 class="footer-copyright">© 2006-2026, Dorjibari. All rights reserved. Developed by <a
                 href="https://arhostbd.com/">ARHOST</a></h5>`;
+  let shoppingCart = `<div class="top-content">
+            <div>
+                <p class="title">Shopping Cart</p>
+                <p class="items"><span id="shopping-cart-count-sidebar">0</span> items</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-cross" onclick="isShoppingCartOpen = false; showShoppingCart()" viewBox="0 0 48 48">
+                <path d="M38.98 6.97a2 2 0 0 0-1.4.62L24 21.17 10.41 7.6a2 2 0 0 0-1.43-.61 2 2 0 0 0-1.4 3.43L21.19 24 7.57 37.59a2 2 0 1 0 2.83 2.82L24 26.83 37.59 40.4a2 2 0 1 0 2.82-2.82L26.83 24 40.4 10.41a2 2 0 0 0-1.43-3.44"/>
+            </svg>
+        </div>
+        <p class="cart-empty">Your cart is empty</p>
+        <a href="index.html" class="continue-shopping">CONTINUE SHOPPING</a>`;
+  let loginSidebar = `<div class="top-content">
+            <p class="title">Login</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="sidebar-cross" onclick="isLoginOpen = false; showLogin();">
+                <path
+                    d="M38.98 6.97a2 2 0 0 0-1.4.62L24 21.17 10.41 7.6a2 2 0 0 0-1.43-.61 2 2 0 0 0-1.4 3.43L21.19 24 7.57 37.59a2 2 0 1 0 2.83 2.82L24 26.83 37.59 40.4a2 2 0 1 0 2.82-2.82L26.83 24 40.4 10.41a2 2 0 0 0-1.43-3.44" />
+            </svg>
+        </div>
+        <br>
+        <label for="" class="input-label">Email Address <span style="color: #E96A86;">*</span></label><br>
+        <input type="email" name="" id="" required class="input" placeholder="Email Address"><br><br>
+        <label for="" class="input-label">Password <span style="color: #E96A86;">*</span></label><br>
+        <input type="password" name="" id="" required class="input" placeholder="Password"><br>
+        <input type="submit" value="LOG IN" class="login-button">
+        <a href="" class="forgot-password">Forgot your password</a>
+        <a href="" class="continue-shopping">CREATE ACCOUNT</a>`;
+  let secondHeader = `<div class="top-content">
+            <div class="hamburger-sign">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 25.7 25.7">
+                <path
+                    d="M0 10a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8c3.5-4.3 2.8-10.6-1.5-14.1A9.3 9.3 0 0 0 10 0C4.5 0 0 4.5 0 10m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8" />
+            </svg>
+        </div>
+        <a href="index.html">
+            <img src="images/logo.avif" alt="">
+        </a>
+        <div class="top-content">
+            <button onclick="showLogin()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-account" viewBox="0 0 1024 1024">
+                    <path
+                        d="M486.4 563.2c-155.27 0-281.6-126.32-281.6-281.6S331.12 0 486.4 0 768 126.33 768 281.6 641.68 563.2 486.4 563.2m0-512C359.36 51.2 256 154.56 256 281.6S359.36 512 486.4 512s230.4-103.36 230.4-230.4S613.44 51.2 486.4 51.2"
+                        class="path1" />
+                    <path
+                        d="M896 1024H76.8C34.45 1024 0 989.55 0 947.2c0-3.48.71-86.28 62.72-168.96 36.1-48.13 85.51-86.36 146.88-113.63 74.96-33.32 168.09-50.21 276.8-50.21s201.84 16.9 276.8 50.2c61.37 27.28 110.79 65.51 146.88 113.64 62 82.68 62.72 165.48 62.72 168.96 0 42.35-34.45 76.8-76.8 76.8M486.4 665.6c-178.52 0-310.27 48.79-381 141.1-53.01 69.17-54.2 139.9-54.2 140.6a25.6 25.6 0 0 0 25.6 25.5H896a25.63 25.63 0 0 0 25.6-25.6c0-.6-1.19-71.33-54.2-140.5-70.73-92.31-202.48-141.1-381-141.1"
+                        class="path2" />
+                </svg>
+            </button>
+            <button style="position: relative; margin-right: 12px;" onclick="showShoppingCart()">
+                <svg class="icon icon-cart w-h-24" viewBox="0 0 30 30">
+                    <path
+                        d="M20 6V5a5 5 0 0 0-10 0v1H4v24h22V6zm-8-1a3 3 0 1 1 6 0v1h-6zm12 23H6V8h4v3h2V8h6v3h2V8h4z" />
+                </svg>
+                <span id="shopping-cart-count2" style="background-color: #232323; color: white;">0</span>
+            </button>
+        </div>`;
 
   document.getElementById("header").innerHTML = header;
   document.getElementById("nav").innerHTML = navbar;
   document.getElementById("footer").innerHTML = footer;
+  document.getElementById("shopping-cart-sidebar").innerHTML = shoppingCart;
+  document.getElementById("login-sidebar").innerHTML = loginSidebar;
+  document.getElementById("second-header").innerHTML = secondHeader;
+
+  let secondHeaderPlace = document.getElementById("second-header");
+  secondHeaderPlace.innerHTML = secondHeader;
 
   let secondNavPlace = document.getElementById("second-nav");
   secondNavPlace.innerHTML = secondNav;
@@ -430,8 +495,19 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", function () {
     const currentScrollY = window.scrollY;
     const isScrollingUp = currentScrollY < lastScrollY;
-    if (currentScrollY >= 122.5 && isScrollingUp) secondNavPlace.style.opacity = 1;
-    else secondNavPlace.style.opacity = 0;
+    // Second nav
+    if (currentScrollY >= 122.5 && isScrollingUp) {
+      secondNavPlace.style.opacity = 1;
+      secondNavPlace.style.pointerEvents = "auto";
+    } else {
+      secondNavPlace.style.opacity = 0;
+      secondNavPlace.style.pointerEvents = "none";
+    }
+    if (window.innerWidth <= 1050) {
+      if (currentScrollY < 51 || isScrollingUp) secondHeaderPlace.style.transform = "translateY(0)";
+      else secondHeaderPlace.style.transform = "translateY(-100%)";
+    }
+
     lastScrollY = currentScrollY;
   });
 
@@ -460,4 +536,48 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   window.expandFooterLink = expandFooterLink;
+
+  let isShoppingCartOpen = false;
+  function showShoppingCart() {
+    let shoppingCartSidebar = document.getElementById("shopping-cart-sidebar");
+    let sidebarOverlay = document.getElementById("sidebar-overlay");
+    if (!isShoppingCartOpen) {
+      shoppingCartSidebar.style.transform = "translateX(-0px)";
+      sidebarOverlay.style.display = "block";
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100vh";
+      secondHeaderPlace.style.transform = "translateY(-100%)";
+      isShoppingCartOpen = true;
+    } else {
+      shoppingCartSidebar.style.transform = "translateX(440px)";
+      sidebarOverlay.style.display = "none";
+      document.body.style.overflow = "";
+      document.body.style.height = "";
+      secondHeaderPlace.style.transform = "translateY(0)";
+      isShoppingCartOpen = false;
+    }
+  }
+  window.showShoppingCart = showShoppingCart;
+
+  let isLoginOpen = false;
+  function showLogin() {
+    let loginSidebarForm = document.getElementById("login-sidebar");
+    let sidebarOverlay = document.getElementById("sidebar-overlay");
+    if (!isLoginOpen) {
+      loginSidebarForm.style.transform = "translateX(-0px)";
+      sidebarOverlay.style.display = "block";
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100vh";
+      secondHeaderPlace.style.transform = "translateY(-100%)";
+      isLoginOpen = true;
+    } else {
+      loginSidebarForm.style.transform = "translateX(440px)";
+      sidebarOverlay.style.display = "none";
+      document.body.style.overflow = "";
+      document.body.style.height = "";
+      secondHeaderPlace.style.transform = "translateY(0)";
+      isLoginOpen = false;
+    }
+  }
+  window.showLogin = showLogin;
 });
