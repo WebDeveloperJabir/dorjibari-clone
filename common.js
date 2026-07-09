@@ -1,18 +1,213 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let header = `<a href="index.html">
+  let footer = `<div class="footer-first">
+            <div>
+                <h4>CONTACT US</h4>
+                <h6 style="margin-bottom: 5px;">HEAD OFFICE</h6>
+                <p>Ambia Tower (7th Floor), 4/1 Simson Road, Kotwali , Dhaka, Bangladesh, 1100.<br>
+                    Hotline: <a href="tel:02-57390880">+8802-57390880</a> <br>
+                    Email: <a href="mailto:info@dorjibari.com.bd">info@dorjibari.com.bd</a> <br><br>
+                    To know the all stores location <br> <a href="https://dorjibari.com.bd/pages/outlets">Click here</a>
+                </p>
+            </div>
+            <div>
+                <h4>ABOUT US</h4>
+                <p>Dorjibari – Redefining Men’s Fashion in Bangladesh.<br><br>
+                    Established in 2006 by <b>Md. Fazlur Rahman</b>, Dorjibari has been a pioneering force in the
+                    Bangladeshi
+                    men's fashion
+                    industry. With a commitment to quality, style, and innovation, we have grown to become a beloved
+                    brand with 47 outlets
+                    across the country, offering a wide range of meticulously crafted clothing and accessories for
+                    men. <br>
+                    <a href="https://dorjibari.com.bd/pages/about-us"
+                        style="display: inline-block; margin-top: 10px;">See more</a>
+                </p>
+            </div>
+            <div class="footer-links" id="footer-links">
+                <div class="ab">
+                    <h4>QUICK LINKS</h4>
+                    <div class="bc" onclick="expandFooterLink()">
+                        <div class="one" id="plus-one"></div>
+                        <div class="two" id="plus-two"></div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="footer-links-place-primary">
+                    <a href="https://dorjibari.com.bd/pages/about-us">About Us</a><br>
+                    <a href="https://dorjibari.com.bd/pages/contact">Contact Us by Email</a><br>
+                    <a href="https://dorjibari.com.bd/blogs/news">Blog</a><br>
+                    <a href="https://dorjibari.com.bd/pages/privacy-policy">Privacy Policy</a><br>
+                    <a href="https://dorjibari.com.bd/pages/shipping-policy">Shipping Policy</a><br>
+                    <a href="https://dorjibari.com.bd/pages/terms-conditions">Terms & Conditions</a>
+                </div>
+                <div class="footer-links-place" id="footer-links-place">
+                    <a href="https://dorjibari.com.bd/pages/about-us">About Us</a><br>
+                    <a href="https://dorjibari.com.bd/pages/contact">Contact Us by Email</a><br>
+                    <a href="https://dorjibari.com.bd/blogs/news">Blog</a><br>
+                    <a href="https://dorjibari.com.bd/pages/privacy-policy">Privacy Policy</a><br>
+                    <a href="https://dorjibari.com.bd/pages/shipping-policy">Shipping Policy</a><br>
+                    <a href="https://dorjibari.com.bd/pages/terms-conditions">Terms & Conditions</a>
+                </div>
+            </div>
+            <div>
+                <h4>SOCIAL</h4>
+                <a href="https://www.facebook.com/dorjibaribd" class="social-links" style="margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-facebook"
+                        viewBox="0 0 320 512">
+                        <path
+                            d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/dorjibari_bd/" class="social-links" style="margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" aria-hidden="true"
+                        class="icon icon-instagram" viewBox="0 0 512 512">
+                        <path
+                            d="M256 152c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105m0 0c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105M437 0H75C33.6 0 0 33.6 0 75v362c0 41.4 33.6 75 75 75h362c41.4 0 75-33.6 75-75V75c0-41.4-33.6-75-75-75M256 392c-74.399 0-135-60.601-135-135 0-74.401 60.601-135 135-135s135 60.599 135 135c0 74.399-60.601 135-135 135m165-270c-16.5 0-30-13.5-30-30s13.5-30 30-30 30 13.5 30 30-13.5 30-30 30m-165 30c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105m0 0c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105m0 0c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105" />
+                    </svg>
+                </a>
+                <a href="https://dorjibari.com.bd/#" class="social-links">
+                    <svg aria-hidden="true" class="icon icon-youtube" viewBox="0 0 100 70">
+                        <path
+                            d="M98 11c2 7.7 2 24 2 24s0 16.3-2 24a12.5 12.5 0 0 1-9 9c-7.7 2-39 2-39 2s-31.3 0-39-2a12.5 12.5 0 0 1-9-9c-2-7.7-2-24-2-24s0-16.3 2-24c1.2-4.4 4.6-7.8 9-9 7.7-2 39-2 39-2s31.3 0 39 2c4.4 1.2 7.8 4.6 9 9M40 50l26-15-26-15z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0690/2923/2929/files/SSLCOMMERZ-Payment-img.png" alt="Footer Image"
+            class="footer-image">
+        <h5 class="footer-copyright">© 2006-2026, Dorjibari. All rights reserved. Developed by <a
+                href="https://arhostbd.com/">ARHOST</a></h5>`;
+  let dynamicComponents = `
+    <header id="header">
+        <a href="index.html">
             <img src="/images/logo.avif" alt="">
         </a>
         <div class="left-side">
             <div class="left-side-one">
                 <a href="#" class="home-links">Outlets</a>
-                <div style="position: relative;">
-                    <input type="text" name="" class="home-inp" placeholder="Search">
+                <div style="position: relative;" id="header-input-place">
+                    <input type="text" class="home-inp" placeholder="Search" onfocus="togglePanel(6)">
                     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 27.5 27.5"
                         class="search-icon">
                         <path
                             d="M0 10.7c0 5.9 4.8 10.7 10.7 10.7 2.6 0 4.9-.9 6.8-2.4l8.5 8.5 1.5-1.5-8.5-8.5c1.5-1.8 2.4-4.2 2.4-6.8C21.4 4.8 16.6 0 10.7 0S0 4.8 0 10.7m3 0C3 6.4 6.4 3 10.7 3s7.7 3.4 7.7 7.7-3.4 7.7-7.7 7.7S3 15 3 10.7"
                             style="fill:#353535" />
                     </svg>
+                    <div class="header-search-options" id="header-input-suggestion">
+                        <p class="bold">TRENDING NOW</p>
+                        <div class="hr" style="background-color: #b9b9b9; margin-bottom: 15px;"></div>
+                        <div class="search-suggestions-place">
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>panjabi</p>
+                            </div>
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>casual shirt</p>
+                            </div>
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>formal shirt</p>
+                            </div>
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>short sleeve polo</p>
+                            </div>
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>belt</p>
+                            </div>
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>jeans</p>
+                            </div>
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>pant</p>
+                            </div>
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>t-shirt</p>
+                            </div>
+                            <div class="search-suggestions">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                                    <path
+                                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                                        style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                                </svg>
+                                <p>tie</p>
+                            </div>
+                        </div>
+                        <br>
+                        <p class="bold">POPULAR PRODUCTS</p>
+                        <div class="hr" style="background-color: #b9b9b9; margin-bottom: 15px;"></div>
+                        <div class="search-products">
+                            <div class="product-card">
+                                <div>
+                                    <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
+                                        alt="Cloth">
+                                </div>
+                                <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                                <p>Tk 2,890.00</p>
+                            </div>
+                            <div class="product-card">
+                                <div>
+                                    <img src="https://dorjibari.com.bd/cdn/shop/files/1_25171f26-b258-4c7e-8ff2-a6edc57f3003.jpg?v=1770441509"
+                                        alt="Cloth">
+                                </div>
+                                <a href="" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
+                                <p>Tk 2,090.00</p>
+                            </div>
+                            <div class="product-card">
+                                <div>
+                                    <img src="https://dorjibari.com.bd/cdn/shop/files/Executive_formal_shirt1_2d7b08d9-74dd-4075-b7a7-c345df1425b8.jpg?v=1771132735"
+                                        alt="Cloth">
+                                </div>
+                                <a href="" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
+                                <p>Tk 1,990.00</p>
+                            </div>
+                            <div class="product-card">
+                                <div>
+                                    <img src="https://dorjibari.com.bd/cdn/shop/files/Panjabi_SemiFit_01.jpg?v=1771736378"
+                                        alt="Cloth">
+                                </div>
+                                <a href="" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
+                                <p>Tk 2,890.00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="left-side-two">
@@ -21,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <path
                             d="M20 6V5a5 5 0 0 0-10 0v1H4v24h22V6zm-8-1a3 3 0 1 1 6 0v1h-6zm12 23H6V8h4v3h2V8h6v3h2V8h4z" />
                     </svg>
-                    <button class="home-links" style="padding: 0; border: none; background-color: white;" onclick="showShoppingCart()">Shopping
+                    <button class="home-links" style="padding: 0; border: none; background-color: white;" onclick="togglePanel(1)">Shopping
                         Cart</button> <span id="shopping-cart-count">0</span>
                 </div>
                 <div>
@@ -31,10 +226,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     </svg>
                     <a href="#" class="home-links">My Wish List</a>
                 </div>
-                <button class="home-links" style="margin-bottom: 2px; padding: 0; border: none; background-color: white;" onclick="showLogin()">Sign in or Create an Account</button>
+                <button class="home-links" style="margin-bottom: 2px; padding: 0; border: none; background-color: white;" onclick="togglePanel(2)">Sign in or Create an Account</button>
             </div>
-        </div>`;
-  let navbar = `<li><a href="">HOME</a></li>
+        </div>
+    </header>
+
+    <ul class="nav" id="nav">
+        <li><a href="">HOME</a></li>
         <li>
             <a href="">EID-UL-ADHA 2026</a>
             <ul class="embed-link">
@@ -175,8 +373,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li><a href="">Frangrance</a></li>
             </ul>
         </li>
-        <li><a href="">GIFT CARD</a></li>`;
-  let secondNav = `<a href="index.html">
+        <li><a href="">GIFT CARD</a></li>
+    </ul>
+
+    <nav class="second-nav" id="second-nav">
+        <a href="index.html">
             <img src="/images/second-logo.webp" alt="">
         </a>
         <ul>
@@ -324,114 +525,77 @@ document.addEventListener("DOMContentLoaded", () => {
             <li><a href="">GIFT CARD</a></li>
         </ul>
         <div>
-            <button>
+            <button onclick="togglePanel(3)">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 494.7 494.7">
                     <path
                         d="M485.3 471.1 338.7 324.5c30.4-33.8 49.2-78.4 49.2-127.3C387.9 92 302.3 6.5 197.2 6.5S6.5 92 6.5 197.2 92 387.9 197.2 387.9c49 0 93.5-18.7 127.3-49.2l146.6 146.6a10 10 0 0 0 7.1 2.9c2.6 0 5.1-1 7.1-2.9 3.9-3.9 3.9-10.3 0-14.2M197.2 367.8c-94.1 0-170.6-76.5-170.6-170.6S103.1 26.6 197.2 26.6s170.6 76.5 170.6 170.6-76.5 170.6-170.6 170.6"
                         style="stroke:#ffffff;stroke-width:13;stroke-miterlimit:10" />
                 </svg>
             </button>
-            <button style="position: relative;">
+            <button style="position: relative;" onclick="togglePanel(1)">
                 <svg class="icon icon-cart w-h-24" viewBox="0 0 30 30">
                     <path
                         d="M20 6V5a5 5 0 0 0-10 0v1H4v24h22V6zm-8-1a3 3 0 1 1 6 0v1h-6zm12 23H6V8h4v3h2V8h6v3h2V8h4z" />
                 </svg>
                 <span id="shopping-cart-count2">0</span>
             </button>
-        </div>`;
-
-  let footer = `<div class="footer-first">
-            <div>
-                <h4>CONTACT US</h4>
-                <h6 style="margin-bottom: 5px;">HEAD OFFICE</h6>
-                <p>Ambia Tower (7th Floor), 4/1 Simson Road, Kotwali , Dhaka, Bangladesh, 1100.<br>
-                    Hotline: <a href="tel:02-57390880">+8802-57390880</a> <br>
-                    Email: <a href="mailto:info@dorjibari.com.bd">info@dorjibari.com.bd</a> <br><br>
-                    To know the all stores location <br> <a href="https://dorjibari.com.bd/pages/outlets">Click here</a>
-                </p>
-            </div>
-            <div>
-                <h4>ABOUT US</h4>
-                <p>Dorjibari – Redefining Men’s Fashion in Bangladesh.<br><br>
-                    Established in 2006 by <b>Md. Fazlur Rahman</b>, Dorjibari has been a pioneering force in the
-                    Bangladeshi
-                    men's fashion
-                    industry. With a commitment to quality, style, and innovation, we have grown to become a beloved
-                    brand with 47 outlets
-                    across the country, offering a wide range of meticulously crafted clothing and accessories for
-                    men. <br>
-                    <a href="https://dorjibari.com.bd/pages/about-us"
-                        style="display: inline-block; margin-top: 10px;">See more</a>
-                </p>
-            </div>
-            <div class="footer-links" id="footer-links">
-                <div class="ab">
-                    <h4>QUICK LINKS</h4>
-                    <div class="bc" onclick="expandFooterLink()">
-                        <div class="one" id="plus-one"></div>
-                        <div class="two" id="plus-two"></div>
-                    </div>
-                </div>
-                <div class="hr"></div>
-                <div class="footer-links-place-primary">
-                    <a href="https://dorjibari.com.bd/pages/about-us">About Us</a><br>
-                    <a href="https://dorjibari.com.bd/pages/contact">Contact Us by Email</a><br>
-                    <a href="https://dorjibari.com.bd/blogs/news">Blog</a><br>
-                    <a href="https://dorjibari.com.bd/pages/privacy-policy">Privacy Policy</a><br>
-                    <a href="https://dorjibari.com.bd/pages/shipping-policy">Shipping Policy</a><br>
-                    <a href="https://dorjibari.com.bd/pages/terms-conditions">Terms & Conditions</a>
-                </div>
-                <div class="footer-links-place" id="footer-links-place">
-                    <a href="https://dorjibari.com.bd/pages/about-us">About Us</a><br>
-                    <a href="https://dorjibari.com.bd/pages/contact">Contact Us by Email</a><br>
-                    <a href="https://dorjibari.com.bd/blogs/news">Blog</a><br>
-                    <a href="https://dorjibari.com.bd/pages/privacy-policy">Privacy Policy</a><br>
-                    <a href="https://dorjibari.com.bd/pages/shipping-policy">Shipping Policy</a><br>
-                    <a href="https://dorjibari.com.bd/pages/terms-conditions">Terms & Conditions</a>
-                </div>
-            </div>
-            <div>
-                <h4>SOCIAL</h4>
-                <a href="https://www.facebook.com/dorjibaribd" class="social-links" style="margin-right: 15px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-facebook"
-                        viewBox="0 0 320 512">
-                        <path
-                            d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/dorjibari_bd/" class="social-links" style="margin-right: 15px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" aria-hidden="true"
-                        class="icon icon-instagram" viewBox="0 0 512 512">
-                        <path
-                            d="M256 152c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105m0 0c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105M437 0H75C33.6 0 0 33.6 0 75v362c0 41.4 33.6 75 75 75h362c41.4 0 75-33.6 75-75V75c0-41.4-33.6-75-75-75M256 392c-74.399 0-135-60.601-135-135 0-74.401 60.601-135 135-135s135 60.599 135 135c0 74.399-60.601 135-135 135m165-270c-16.5 0-30-13.5-30-30s13.5-30 30-30 30 13.5 30 30-13.5 30-30 30m-165 30c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105m0 0c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105m0 0c-57.9 0-105 47.1-105 105s47.1 105 105 105 105-47.1 105-105-47.1-105-105-105" />
-                    </svg>
-                </a>
-                <a href="https://dorjibari.com.bd/#" class="social-links">
-                    <svg aria-hidden="true" class="icon icon-youtube" viewBox="0 0 100 70">
-                        <path
-                            d="M98 11c2 7.7 2 24 2 24s0 16.3-2 24a12.5 12.5 0 0 1-9 9c-7.7 2-39 2-39 2s-31.3 0-39-2a12.5 12.5 0 0 1-9-9c-2-7.7-2-24-2-24s0-16.3 2-24c1.2-4.4 4.6-7.8 9-9 7.7-2 39-2 39-2s31.3 0 39 2c4.4 1.2 7.8 4.6 9 9M40 50l26-15-26-15z" />
-                    </svg>
-                </a>
-            </div>
         </div>
-        <img src="https://cdn.shopify.com/s/files/1/0690/2923/2929/files/SSLCOMMERZ-Payment-img.png" alt="Footer Image"
-            class="footer-image">
-        <h5 class="footer-copyright">© 2006-2026, Dorjibari. All rights reserved. Developed by <a
-                href="https://arhostbd.com/">ARHOST</a></h5>`;
-  let shoppingCart = `<div class="top-content">
+    </nav>
+
+    <nav class="second-header" id="second-header">
+        <div class="top-content">
+            <div class="hamburger-sign" onclick="togglePanel(4)">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 25.7 25.7" onclick="togglePanel(5)">
+                <path
+                    d="M0 10a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8c3.5-4.3 2.8-10.6-1.5-14.1A9.3 9.3 0 0 0 10 0C4.5 0 0 4.5 0 10m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8" />
+            </svg>
+        </div>
+        <a href="index.html">
+            <img src="images/logo.avif" alt="">
+        </a>
+        <div class="top-content">
+            <button onclick="togglePanel(2)">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-account" viewBox="0 0 1024 1024">
+                    <path
+                        d="M486.4 563.2c-155.27 0-281.6-126.32-281.6-281.6S331.12 0 486.4 0 768 126.33 768 281.6 641.68 563.2 486.4 563.2m0-512C359.36 51.2 256 154.56 256 281.6S359.36 512 486.4 512s230.4-103.36 230.4-230.4S613.44 51.2 486.4 51.2"
+                        class="path1" />
+                    <path
+                        d="M896 1024H76.8C34.45 1024 0 989.55 0 947.2c0-3.48.71-86.28 62.72-168.96 36.1-48.13 85.51-86.36 146.88-113.63 74.96-33.32 168.09-50.21 276.8-50.21s201.84 16.9 276.8 50.2c61.37 27.28 110.79 65.51 146.88 113.64 62 82.68 62.72 165.48 62.72 168.96 0 42.35-34.45 76.8-76.8 76.8M486.4 665.6c-178.52 0-310.27 48.79-381 141.1-53.01 69.17-54.2 139.9-54.2 140.6a25.6 25.6 0 0 0 25.6 25.5H896a25.63 25.63 0 0 0 25.6-25.6c0-.6-1.19-71.33-54.2-140.5-70.73-92.31-202.48-141.1-381-141.1"
+                        class="path2" />
+                </svg>
+            </button>
+            <button style="position: relative; margin-right: 12px;" onclick="togglePanel(1)">
+                <svg class="icon icon-cart w-h-24" viewBox="0 0 30 30">
+                    <path
+                        d="M20 6V5a5 5 0 0 0-10 0v1H4v24h22V6zm-8-1a3 3 0 1 1 6 0v1h-6zm12 23H6V8h4v3h2V8h6v3h2V8h4z" />
+                </svg>
+                <span id="shopping-cart-count2" style="background-color: #232323; color: white;">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="left-sidebar common-sidebar" id="shopping-cart-sidebar">
+        <div class="top-content">
             <div>
                 <p class="title">Shopping Cart</p>
                 <p class="items"><span id="shopping-cart-count-sidebar">0</span> items</p>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-cross" onclick="isShoppingCartOpen = false; showShoppingCart()" viewBox="0 0 48 48">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-cross" onclick="togglePanel(1)" viewBox="0 0 48 48">
                 <path d="M38.98 6.97a2 2 0 0 0-1.4.62L24 21.17 10.41 7.6a2 2 0 0 0-1.43-.61 2 2 0 0 0-1.4 3.43L21.19 24 7.57 37.59a2 2 0 1 0 2.83 2.82L24 26.83 37.59 40.4a2 2 0 1 0 2.82-2.82L26.83 24 40.4 10.41a2 2 0 0 0-1.43-3.44"/>
             </svg>
         </div>
         <p class="cart-empty">Your cart is empty</p>
-        <a href="index.html" class="continue-shopping">CONTINUE SHOPPING</a>`;
-  let loginSidebar = `<div class="top-content">
+        <a href="index.html" class="continue-shopping">CONTINUE SHOPPING</a>
+    </div>
+
+    <form class="left-sidebar common-sidebar" id="login-sidebar" style="width: 370px;">
+        <div class="top-content">
             <p class="title">Login</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="sidebar-cross" onclick="isLoginOpen = false; showLogin();">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="sidebar-cross" onclick="togglePanel(2)">
                 <path
                     d="M38.98 6.97a2 2 0 0 0-1.4.62L24 21.17 10.41 7.6a2 2 0 0 0-1.43-.61 2 2 0 0 0-1.4 3.43L21.19 24 7.57 37.59a2 2 0 1 0 2.83 2.82L24 26.83 37.59 40.4a2 2 0 1 0 2.82-2.82L26.83 24 40.4 10.41a2 2 0 0 0-1.43-3.44" />
             </svg>
@@ -443,59 +607,609 @@ document.addEventListener("DOMContentLoaded", () => {
         <input type="password" name="" id="" required class="input" placeholder="Password"><br>
         <input type="submit" value="LOG IN" class="login-button">
         <a href="" class="forgot-password">Forgot your password</a>
-        <a href="" class="continue-shopping">CREATE ACCOUNT</a>`;
-  let secondHeader = `<div class="top-content">
-            <div class="hamburger-sign">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 25.7 25.7">
+        <a href="" class="continue-shopping">CREATE ACCOUNT</a>
+    </form>
+
+    <div class="search-options common-sidebar" id="second-header-input">
+        <div class="top-content">
+            <p class="title">Search</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="sidebar-cross"
+                onclick="togglePanel(5);">
                 <path
-                    d="M0 10a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8c3.5-4.3 2.8-10.6-1.5-14.1A9.3 9.3 0 0 0 10 0C4.5 0 0 4.5 0 10m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8" />
+                    d="M38.98 6.97a2 2 0 0 0-1.4.62L24 21.17 10.41 7.6a2 2 0 0 0-1.43-.61 2 2 0 0 0-1.4 3.43L21.19 24 7.57 37.59a2 2 0 1 0 2.83 2.82L24 26.83 37.59 40.4a2 2 0 1 0 2.82-2.82L26.83 24 40.4 10.41a2 2 0 0 0-1.43-3.44" />
             </svg>
         </div>
-        <a href="index.html">
-            <img src="images/logo.avif" alt="">
-        </a>
-        <div class="top-content">
-            <button onclick="showLogin()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-account" viewBox="0 0 1024 1024">
+        <br>
+        <div class="icon-input">
+            <input type="text" name="" id="search-input" placeholder="Search products...">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
                     <path
-                        d="M486.4 563.2c-155.27 0-281.6-126.32-281.6-281.6S331.12 0 486.4 0 768 126.33 768 281.6 641.68 563.2 486.4 563.2m0-512C359.36 51.2 256 154.56 256 281.6S359.36 512 486.4 512s230.4-103.36 230.4-230.4S613.44 51.2 486.4 51.2"
-                        class="path1" />
-                    <path
-                        d="M896 1024H76.8C34.45 1024 0 989.55 0 947.2c0-3.48.71-86.28 62.72-168.96 36.1-48.13 85.51-86.36 146.88-113.63 74.96-33.32 168.09-50.21 276.8-50.21s201.84 16.9 276.8 50.2c61.37 27.28 110.79 65.51 146.88 113.64 62 82.68 62.72 165.48 62.72 168.96 0 42.35-34.45 76.8-76.8 76.8M486.4 665.6c-178.52 0-310.27 48.79-381 141.1-53.01 69.17-54.2 139.9-54.2 140.6a25.6 25.6 0 0 0 25.6 25.5H896a25.63 25.63 0 0 0 25.6-25.6c0-.6-1.19-71.33-54.2-140.5-70.73-92.31-202.48-141.1-381-141.1"
-                        class="path2" />
+                        d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                        style="fill:#232323;stroke:#232323;stroke-miterlimit:10" />
                 </svg>
             </button>
-            <button style="position: relative; margin-right: 12px;" onclick="showShoppingCart()">
-                <svg class="icon icon-cart w-h-24" viewBox="0 0 30 30">
-                    <path
-                        d="M20 6V5a5 5 0 0 0-10 0v1H4v24h22V6zm-8-1a3 3 0 1 1 6 0v1h-6zm12 23H6V8h4v3h2V8h6v3h2V8h4z" />
-                </svg>
-                <span id="shopping-cart-count2" style="background-color: #232323; color: white;">0</span>
-            </button>
-        </div>`;
+        </div>
+        <br>
+        <div class="scroll-area">
+            <p class="bold">TRENDING NOW</p>
+            <div class="hr" style="background-color: #b9b9b9; margin-bottom: 15px;"></div>
+            <div class="search-suggestions-place">
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>panjabi</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>casual shirt</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>formal shirt</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>short sleeve polo</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>belt</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>jeans</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>pant</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>t-shirt</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>tie</p>
+                </div>
+            </div>
+            <br>
+            <p class="bold">POPULAR PRODUCTS</p>
+            <div class="hr" style="background-color: #b9b9b9; margin-bottom: 15px;"></div>
+            <div class="search-products">
+                <div class="product-card">
+                    <div>
+                        <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
+                            alt="Cloth">
+                    </div>
+                    <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                    <p>Tk 2,890.00</p>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dorjibari.com.bd/cdn/shop/files/1_25171f26-b258-4c7e-8ff2-a6edc57f3003.jpg?v=1770441509"
+                            alt="Cloth">
+                    </div>
+                    <a href="" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
+                    <p>Tk 2,090.00</p>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dorjibari.com.bd/cdn/shop/files/Executive_formal_shirt1_2d7b08d9-74dd-4075-b7a7-c345df1425b8.jpg?v=1771132735"
+                            alt="Cloth">
+                    </div>
+                    <a href="" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
+                    <p>Tk 1,990.00</p>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dorjibari.com.bd/cdn/shop/files/Panjabi_SemiFit_01.jpg?v=1771736378"
+                            alt="Cloth">
+                    </div>
+                    <a href="" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
+                    <p>Tk 2,890.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  document.getElementById("header").innerHTML = header;
-  document.getElementById("nav").innerHTML = navbar;
+    <div class="small-screen-menubar common-sidebar" id="small-screen-menubar">
+        <div class="abc">
+            <div class="top">
+            <h4>Menu</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-cross" onclick="togglePanel(4)" viewBox="0 0 48 48">
+                <path
+                    d="M38.98 6.97a2 2 0 0 0-1.4.62L24 21.17 10.41 7.6a2 2 0 0 0-1.43-.61 2 2 0 0 0-1.4 3.43L21.19 24 7.57 37.59a2 2 0 1 0 2.83 2.82L24 26.83 37.59 40.4a2 2 0 1 0 2.82-2.82L26.83 24 40.4 10.41a2 2 0 0 0-1.43-3.44" />
+            </svg>
+            </div>
+            <br>
+            <a href="">HOME</a>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('men-top')">
+                MEN TOP
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('men-bottom')">
+                MEN BOTTOM
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('outerware')">
+                OUTERWARE
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <a href="">FRAGRANCE 50% OFF🎉</a>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('accessories')">
+                ACCESSORIES
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <a href="">GIFT CARD</a>
+            <div class="hr"></div>
+            <div class="flex-1">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-account stroke-w-0 w-h-"
+                    viewBox="0 0 32 32">
+                    <path
+                        d="M16 3C8.83 3 3 8.83 3 16s5.83 13 13 13 13-5.83 13-13S23.17 3 16 3m0 2c6.09 0 11 4.91 11 11s-4.91 11-11 11S5 22.09 5 16 9.91 5 16 5m0 3a4.98 4.98 0 0 0-3.22 8.78A7 7 0 0 0 9 23h2c0-2.77 2.23-5 5-5s5 2.23 5 5h2a7 7 0 0 0-3.78-6.22A4.98 4.98 0 0 0 16 8m0 2c1.67 0 3 1.33 3 3s-1.33 3-3 3-3-1.33-3-3 1.33-3 3-3" />
+                </svg>
+                Sign In
+            </div>
+            <div class="hr"></div>
+            <div class="flex-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sign-up" viewBox="0 0 17 17">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #767676
+                            }
+
+                            .cls-2 {
+                                fill: #5c5c5c
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                                d="M10.11 15.67H1.9a.67.67 0 0 1-.56-.8 7.3 7.3 0 0 1 3.86-5 7.2 7.2 0 0 1 5.08-.58 9 9 0 0 1 1.39.49.66.66 0 0 0 .9-.49.7.7 0 0 0-.42-.74q-.45-.2-.93-.39l.28-.24a4 4 0 0 0 1-1.35 4.4 4.4 0 0 0 .15-3.68A4.5 4.5 0 0 0 9.7.16C9.44.09 9.18.08 8.93 0H8l-.39.05a4.5 4.5 0 0 0-3.17 2.4A4.3 4.3 0 0 0 4 5.07a5 5 0 0 0 .58 1.72 4 4 0 0 0 1 1.21c.12.11.12.11 0 .17a9 9 0 0 0-1.19.54 8 8 0 0 0-2.49 2 8 8 0 0 0-1.88 4v.56q-.02.18.07.37A2 2 0 0 0 1.73 17h8.6s.08 0 .12-.05a.66.66 0 0 0 .35-.87.7.7 0 0 0-.69-.41M5.31 4.52A3.19 3.19 0 1 1 8.55 7.7a3.2 3.2 0 0 1-3.24-3.18" />
+                            <path
+                                d="M16.17 13.18h-1.49c-.15 0-.18 0-.17-.19v-1.56a1 1 0 0 0-.06-.34.66.66 0 0 0-1.27.27v1.69c0 .11 0 .14-.13.13h-1.63a1 1 0 0 0-.34.06.7.7 0 0 0-.38.72.66.66 0 0 0 .64.55H13c.14 0 .19 0 .19.17v1.49a.75.75 0 0 0 .53.83H14a.64.64 0 0 0 .58-.68v-1.55c0-.2 0-.21.21-.21h1.51A.65.65 0 0 0 17 14v-.27a.75.75 0 0 0-.83-.55" />
+                            <path d="M8.23 0h-.06zM8.23 0h-.06z" class="cls-1" />
+                            <path d="M8.25 0h.05-.07ZM8.24 0h.07-.05ZM8.77 0H8.7zM8.77 0H8.7z" class="cls-2" />
+                            <path d="M8.78 0h.05zM8.78 0h.06zM8.78 0" class="cls-1" />
+                        </g>
+                    </g>
+                </svg>
+                Create an Account
+            </div>
+            <div class="hr"></div>
+            <div class="flex-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-wishlist" viewBox="0 0 20.92 18">
+                    <g data-name="Layer 2">
+                        <path
+                            d="M5.6 0A5.6 5.6 0 0 0 0 5.6a5 5 0 0 0 .93 2.66 7 7 0 0 0 .91 1.1l8.08 8.1.54.54.54-.54 8.07-8.1a5.7 5.7 0 0 0 1.85-3.76 5.6 5.6 0 0 0-5.6-5.6 6.8 6.8 0 0 0-4.86 2.19A6.8 6.8 0 0 0 5.6 0m0 1.49c2.24 0 4.3 2.18 4.3 2.18l.56.63.54-.63s2.06-2.18 4.3-2.18a4.1 4.1 0 0 1 4.1 4.11c0 1.16-1.4 2.71-1.4 2.71l-7.56 7.57-7.55-7.57a6 6 0 0 1-.72-.89 3.6 3.6 0 0 1-.68-1.82A4.13 4.13 0 0 1 5.6 1.49"
+                            data-name="Layer 1" />
+                    </g>
+                </svg>
+                My Wish List
+            </div>
+            <div class="hr" style="margin-bottom: 120px;"></div>
+        </div>
+        <div class="small-screen-menubar-sub" id="men-top">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>MEN TOP</p>
+            </div>
+            <a href="">Go To MEN TOP</a>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('panjabi')">
+                Panjabi
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('shirt')">
+                Shirt
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('polo')">
+                Polo
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('t-shirt')">
+                T-Shirt
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <a href="">Fatua</a>
+            <div class="hr"></div>
+            <a href="">Bapari Shirt</a>
+            <div class="hr"></div>
+        </div>
+        <div class="small-screen-menubar-sub" id="panjabi">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>MEN TOP</p>
+            </div>
+            <a href="">Go To Panjabi</a>
+            <div class="hr"></div>
+            <a href="">Semi Fit</a>
+            <div class="hr"></div>
+            <a href="">Regular Fit</a>
+            <div class="hr"></div>
+            <a href="">Trendy Fit</a>
+            <div class="hr"></div>
+        </div>
+        <div class="small-screen-menubar-sub" id="shirt">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>MEN TOP</p>
+            </div>
+            <a href="">Go To Shirt</a>
+            <div class="hr"></div>
+            <a href="">Formal Shirt</a>
+            <div class="hr"></div>
+            <a href="">Casual Full Sleeve</a>
+            <div class="hr"></div>
+            <a href="">Casual Short Sleeve</a>
+            <div class="hr"></div>
+            <a href="">Cuban Collar</a>
+        </div>
+        <div class="small-screen-menubar-sub" id="polo">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>MEN TOP</p>
+            </div>
+            <a href="">Go To Polo</a>
+            <div class="hr"></div>
+            <a href="">Full Sleeve</a>
+            <div class="hr"></div>
+            <a href="">Short Sleeve</a>
+        </div>
+        <div class="small-screen-menubar-sub" id="t-shirt">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>MEN TOP</p>
+            </div>
+            <a href="">Go To T-Shirt</a>
+            <div class="hr"></div>
+            <a href="">Full Sleeve</a>
+            <div class="hr"></div>
+            <a href="">Short Sleeve</a>
+            <div class="hr"></div>
+        </div>
+        <div class="small-screen-menubar-sub" id="men-bottom">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>MEN BOTTOM</p>
+            </div>
+            <a href="">Go To MEN BOTTOM</a>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('pant')">
+                Pant
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <div class="flex" onclick="bringMenu('trousers')">
+                Trousers
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret" viewBox="0 0 24 24">
+                    <path d="m7.75 1.34-1.5 1.32 8.4 9.34-8.4 9.34 1.5 1.32 9-10 .6-.66-.6-.66Z" />
+                </svg>
+            </div>
+            <div class="hr"></div>
+            <a href="">Pajama</a>
+            <div class="hr"></div>
+            <a href="">Joggers</a>
+            <div class="hr"></div>
+        </div>
+        <div class="small-screen-menubar-sub" id="pant">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>MEN BOTTOM</p>
+            </div>
+            <a href="">Go To Pant</a>
+            <div class="hr"></div>
+            <a href="">Jeans</a>
+            <div class="hr"></div>
+            <a href="">Gabardine</a>
+            <div class="hr"></div>
+            <a href="">Formal</a>
+            <div class="hr"></div>
+        </div>
+        <div class="small-screen-menubar-sub" id="trousers">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>MEN BOTTOM</p>
+            </div>
+            <a href="">Go To Trousers</a>
+            <div class="hr"></div>
+            <a href="">Long Trousers</a>
+            <div class="hr"></div>
+            <a href="">Short Trousers</a>
+            <div class="hr"></div>
+        </div>
+        <div class="small-screen-menubar-sub" id="outerware">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>OUTERWARE</p>
+            </div>
+            <a href="">Go To OUTERWARE</a>
+            <div class="hr"></div>
+            <a href="">Blazer</a>
+            <div class="hr"></div>
+            <a href="">Suit</a>
+            <div class="hr"></div>
+            <a href="">Coat</a>
+            <div class="hr"></div>
+        </div>
+        <div class="small-screen-menubar-sub" id="accessories">
+            <div class="sub-menubar-header">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-arrow-nav"
+                    data-icon="long-arrow-left" data-prefix="fal" viewBox="0 0 448 512" onclick="bringMenu(1)">
+                    <path fill="currentColor"
+                        d="m136.97 380.49 7.07-7.07a12 12 0 0 0 0-16.98L60.11 273H436a12 12 0 0 0 12-12v-10a12 12 0 0 0-12-12H60.11l83.93-83.44a12 12 0 0 0 0-16.98l-7.07-7.07a12 12 0 0 0-16.97 0l-116.48 116a12 12 0 0 0 0 16.98l116.48 116a12 12 0 0 0 16.97 0" />
+                </svg>
+                <p>ACCESSORIES</p>
+            </div>
+            <a href="">Go To ACCESSORIES</a>
+            <div class="hr"></div>
+            <a href="">Belt</a>
+            <div class="hr"></div>
+            <a href="">Tie</a>
+            <div class="hr"></div>
+            <a href="">Frangrance</a>
+            <div class="hr"></div>
+        </div>
+    </div>
+
+    <div id="scroll-header-input-box">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="sidebar-cross" onclick="togglePanel(3);"
+            fill="white" stroke="white" stroke-width="3px">
+            <path
+                d="M38.98 6.97a2 2 0 0 0-1.4.62L24 21.17 10.41 7.6a2 2 0 0 0-1.43-.61 2 2 0 0 0-1.4 3.43L21.19 24 7.57 37.59a2 2 0 1 0 2.83 2.82L24 26.83 37.59 40.4a2 2 0 1 0 2.82-2.82L26.83 24 40.4 10.41a2 2 0 0 0-1.43-3.44" />
+        </svg>
+        <div class="icon-input">
+            <input type="text" placeholder="Search">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-search-1 p-relative" transform="rotate(-90)"
+                    viewBox="0 0 32 32" stroke="black" stroke-width="1px">
+                    <path
+                        d="M19 3a10.01 10.01 0 0 0-7.75 16.31l-7.97 7.97 1.44 1.44 7.97-7.97A10.01 10.01 0 0 0 29 13c0-5.51-4.49-10-10-10m0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8-8-3.57-8-8 3.57-8 8-8" />
+                </svg>
+            </button>
+        </div>
+        <div class="scroll-header-input common-sidebar">
+            <p class="bold">TRENDING NOW</p>
+            <div class="hr" style="background-color: #b9b9b9; margin-bottom: 15px;"></div>
+            <div class="search-suggestions-place">
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>panjabi</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>casual shirt</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>formal shirt</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>short sleeve polo</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>belt</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>jeans</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>pant</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>t-shirt</p>
+                </div>
+                <div class="search-suggestions">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 26.9 26.9">
+                        <path
+                            d="M.5 10.5a10.03 10.03 0 0 0 16.3 7.8l8 8 1.4-1.4-8-8A10.02 10.02 0 0 0 10.4.6C5 .5.5 5 .5 10.5m2 0c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8"
+                            style="fill:#686868;stroke:#686868;stroke-miterlimit:10" />
+                    </svg>
+                    <p>tie</p>
+                </div>
+            </div>
+            <br>
+            <p class="bold">POPULAR PRODUCTS</p>
+            <div class="hr" style="background-color: #b9b9b9; margin-bottom: 15px;"></div>
+            <div class="search-products">
+                <div class="product-card">
+                    <div>
+                        <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
+                            alt="Cloth">
+                    </div>
+                    <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                    <p>Tk 2,890.00</p>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dorjibari.com.bd/cdn/shop/files/1_25171f26-b258-4c7e-8ff2-a6edc57f3003.jpg?v=1770441509"
+                            alt="Cloth">
+                    </div>
+                    <a href="" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
+                    <p>Tk 2,090.00</p>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dorjibari.com.bd/cdn/shop/files/Executive_formal_shirt1_2d7b08d9-74dd-4075-b7a7-c345df1425b8.jpg?v=1771132735"
+                            alt="Cloth">
+                    </div>
+                    <a href="" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
+                    <p>Tk 1,990.00</p>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dorjibari.com.bd/cdn/shop/files/Panjabi_SemiFit_01.jpg?v=1771736378"
+                            alt="Cloth">
+                    </div>
+                    <a href="" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
+                    <p>Tk 2,890.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    `;
+
+  document.getElementById("dynamic-component").insertAdjacentHTML("afterbegin", dynamicComponents);
   document.getElementById("footer").innerHTML = footer;
-  document.getElementById("shopping-cart-sidebar").innerHTML = shoppingCart;
-  document.getElementById("login-sidebar").innerHTML = loginSidebar;
-  document.getElementById("second-header").innerHTML = secondHeader;
 
+  let headerSuggestion = document.getElementById("header-input-suggestion");
+  const headerInputPlace = document.getElementById("header-input-place");
+  let sidebarOverlay = document.getElementById("sidebar-overlay");
   let secondHeaderPlace = document.getElementById("second-header");
-  secondHeaderPlace.innerHTML = secondHeader;
-
   let secondNavPlace = document.getElementById("second-nav");
-  secondNavPlace.innerHTML = secondNav;
+
+  document.addEventListener("click", (e) => {
+    if (!headerInputPlace.contains(e.target)) {
+      headerSuggestion.style.display = "none";
+    }
+  });
 
   let lastScrollY = window.scrollY;
   window.addEventListener("scroll", function () {
     const currentScrollY = window.scrollY;
     const isScrollingUp = currentScrollY < lastScrollY;
-    // Second nav
     if (currentScrollY >= 122.5 && isScrollingUp) {
       secondNavPlace.style.opacity = 1;
       secondNavPlace.style.pointerEvents = "auto";
@@ -512,7 +1226,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   let isFooterLinkOpen = false;
-
   function expandFooterLink() {
     let plusOneFooter = document.getElementById("plus-one");
     let plusTwoFooter = document.getElementById("plus-two");
@@ -537,47 +1250,66 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   window.expandFooterLink = expandFooterLink;
 
-  let isShoppingCartOpen = false;
-  function showShoppingCart() {
-    let shoppingCartSidebar = document.getElementById("shopping-cart-sidebar");
-    let sidebarOverlay = document.getElementById("sidebar-overlay");
-    if (!isShoppingCartOpen) {
-      shoppingCartSidebar.style.transform = "translateX(-0px)";
-      sidebarOverlay.style.display = "block";
-      document.body.style.overflow = "hidden";
-      document.body.style.height = "100vh";
-      secondHeaderPlace.style.transform = "translateY(-100%)";
-      isShoppingCartOpen = true;
-    } else {
-      shoppingCartSidebar.style.transform = "translateX(440px)";
-      sidebarOverlay.style.display = "none";
-      document.body.style.overflow = "";
-      document.body.style.height = "";
-      secondHeaderPlace.style.transform = "translateY(0)";
-      isShoppingCartOpen = false;
-    }
-  }
-  window.showShoppingCart = showShoppingCart;
+  let currentPanel = null;
 
-  let isLoginOpen = false;
-  function showLogin() {
-    let loginSidebarForm = document.getElementById("login-sidebar");
-    let sidebarOverlay = document.getElementById("sidebar-overlay");
-    if (!isLoginOpen) {
-      loginSidebarForm.style.transform = "translateX(-0px)";
-      sidebarOverlay.style.display = "block";
-      document.body.style.overflow = "hidden";
-      document.body.style.height = "100vh";
-      secondHeaderPlace.style.transform = "translateY(-100%)";
-      isLoginOpen = true;
-    } else {
-      loginSidebarForm.style.transform = "translateX(440px)";
-      sidebarOverlay.style.display = "none";
-      document.body.style.overflow = "";
-      document.body.style.height = "";
-      secondHeaderPlace.style.transform = "translateY(0)";
-      isLoginOpen = false;
+  function togglePanel(id) {
+    switch (id) {
+      case 1: {
+        const cart = document.getElementById("shopping-cart-sidebar");
+        cart.style.transform = cart.style.transform === "translateX(0px)" ? "translateX(440px)" : "translateX(0px)";
+        sidebarOverlay.style.display = cart.style.transform === "translateX(0px)" ? "block" : "none";
+        break;
+      }
+
+      case 2: {
+        const login = document.getElementById("login-sidebar");
+        login.style.transform = login.style.transform === "translateX(0px)" ? "translateX(440px)" : "translateX(0px)";
+        sidebarOverlay.style.display = login.style.transform === "translateX(0px)" ? "block" : "none";
+        break;
+      }
+
+      case 3: {
+        const search = document.getElementById("scroll-header-input-box");
+        search.style.display = search.style.display === "block" ? "none" : "block";
+        sidebarOverlay.style.display = sidebarOverlay.style.display === "block" ? "none" : "block";
+        break;
+      }
+
+      case 4: {
+        const menu = document.getElementById("small-screen-menubar");
+        menu.style.transform = menu.style.transform === "translateX(0px)" ? "translateX(-100%)" : "translateX(0px)";
+        sidebarOverlay.style.display = sidebarOverlay.style.display === "block" ? "none" : "block";
+        break;
+      }
+
+      case 5: {
+        const search = document.getElementById("second-header-input");
+        search.style.transform = search.style.transform === "translateX(0px)" ? "translateX(-100%)" : "translateX(0px)";
+        sidebarOverlay.style.display = sidebarOverlay.style.display === "block" ? "none" : "block";
+        break;
+      }
+      case 6: {
+        const search = document.getElementById("header-input-suggestion");
+        search.style.display = search.style.display === "block" ? "none" : "block";
+        break;
+      }
     }
   }
-  window.showLogin = showLogin;
+  window.togglePanel = togglePanel;
+
+  let prevMenuStack = [];
+  function bringMenu(id) {
+    if (id == 1) {
+      const prevMenu = prevMenuStack[prevMenuStack.length - 1];
+      if (prevMenu) {
+        document.getElementById(prevMenu).style.transform = "translateX(-100%)";
+        prevMenuStack.pop();
+      }
+      return;
+    }
+    document.getElementById(id).style.transform = "translateX(0)";
+    document.getElementById(id).style.overflowY = "auto";
+    prevMenuStack.push(id);
+  }
+  window.bringMenu = bringMenu;
 });
