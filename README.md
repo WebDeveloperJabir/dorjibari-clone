@@ -3,7 +3,7 @@
 This is a clone website of the original **Dorjibari** ([dorjibari.com.bd](dorjibari.com.bd)). I cloned that for practical purposes. Though I didn't complete the whole clone, I have learnt many things from it.
 
 **Project Deployed on:** Cloudfare ([cloudfare.com](cloudfare.com))  
-**Project Link:** [https://dorjibari-clone.jabir-webdev.workers.dev](https://dorjibari-clone.jabir-webdev.workers.dev)
+**Project Link:** [https://dorjibari-clone.pages.dev](https://dorjibari-clone.pages.dev)
 
 I didn't used any third-party tool or didn't copied their codes to clone it. Instead, I created this from scratch. I tried to design the exact. It is the proof that I can design a web pixel-perfect by seeing the original. Also, all the functionalities of the website is also written by me. For working on it, I have learnt many things such as advanced responsive design, optimizations, dealing with 1000+ lines of CSS code, dynamic pages by JS etc. Really, I have learned so many things from this project.
 
