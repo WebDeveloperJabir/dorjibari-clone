@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let footer = `<div class="footer-first">
+    let footer = `<div class="footer-first">
             <div>
                 <h4>CONTACT US</h4>
                 <h6 style="margin-bottom: 5px;">HEAD OFFICE</h6>
@@ -77,14 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
             class="footer-image">
         <h5 class="footer-copyright">© 2006-2026, Dorjibari. All rights reserved. Developed by <a
                 href="https://arhostbd.com/">ARHOST</a></h5>`;
-  let dynamicComponents = `
+    let dynamicComponents = `
     <header id="header">
         <a href="index.html">
             <img src="/images/logo.avif" alt="">
         </a>
         <div class="left-side">
             <div class="left-side-one">
-                <a href="#" class="home-links">Outlets</a>
+                <a href="category.html" class="home-links">Outlets</a>
                 <div style="position: relative;" id="header-input-place">
                     <input type="text" class="home-inp" placeholder="Search" onfocus="togglePanel(6)">
                     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 27.5 27.5"
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
                                         alt="Cloth">
                                 </div>
-                                <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                                <a href="product.html" class="sh">Panjabi:Semi Fit_Print_361#3</a>
                                 <p>Tk 2,890.00</p>
                             </div>
                             <div class="product-card">
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <img src="https://dorjibari.com.bd/cdn/shop/files/1_25171f26-b258-4c7e-8ff2-a6edc57f3003.jpg?v=1770441509"
                                         alt="Cloth">
                                 </div>
-                                <a href="" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
+                                <a href="product.html" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
                                 <p>Tk 2,090.00</p>
                             </div>
                             <div class="product-card">
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <img src="https://dorjibari.com.bd/cdn/shop/files/Executive_formal_shirt1_2d7b08d9-74dd-4075-b7a7-c345df1425b8.jpg?v=1771132735"
                                         alt="Cloth">
                                 </div>
-                                <a href="" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
+                                <a href="product.html" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
                                 <p>Tk 1,990.00</p>
                             </div>
                             <div class="product-card">
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <img src="https://dorjibari.com.bd/cdn/shop/files/Panjabi_SemiFit_01.jpg?v=1771736378"
                                         alt="Cloth">
                                 </div>
-                                <a href="" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
+                                <a href="product.html" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
                                 <p>Tk 2,890.00</p>
                             </div>
                         </div>
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <path
                             d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397 19.813 16.884 40.302 34.344 62.115 53.429l.655.574c2.828 2.476 6.354 3.713 9.88 3.713s7.052-1.238 9.88-3.713l.655-.574c21.813-19.085 42.302-36.544 62.118-53.431 53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081M309.193 401.614c-17.08 14.554-34.658 29.533-53.193 45.646-18.534-16.111-36.113-31.091-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263" />
                     </svg>
-                    <a href="#" class="home-links">My Wish List</a>
+                    <a href="category.html" class="home-links">My Wish List</a>
                 </div>
                 <button class="home-links" style="margin-bottom: 2px; padding: 0; border: none; background-color: white;" onclick="togglePanel(2)">Sign in or Create an Account</button>
             </div>
@@ -232,148 +232,148 @@ document.addEventListener("DOMContentLoaded", () => {
     </header>
 
     <ul class="nav" id="nav">
-        <li><a href="">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li>
-            <a href="">EID-UL-ADHA 2026</a>
+            <a href="category.html">EID-UL-ADHA 2026</a>
             <ul class="embed-link">
-                <li><a href="">PANJABI</a></li>
+                <li><a href="category.html">PANJABI</a></li>
                 <div class="hr"></div>
-                <li><a href="">SHIRT</a></li>
+                <li><a href="category.html">SHIRT</a></li>
                 <div class="hr"></div>
-                <li><a href="">POLO</a></li>
+                <li><a href="category.html">POLO</a></li>
                 <div class="hr"></div>
-                <li><a href="">T-SHIRT</a></li>
+                <li><a href="category.html">T-SHIRT</a></li>
                 <div class="hr"></div>
-                <li><a href="">FATUA</a></li>
+                <li><a href="category.html">FATUA</a></li>
                 <div class="hr"></div>
-                <li><a href="">JEANS PANT</a></li>
+                <li><a href="category.html">JEANS PANT</a></li>
                 <div class="hr"></div>
-                <li><a href="">GABARDINE PANT</a></li>
+                <li><a href="category.html">GABARDINE PANT</a></li>
             </ul>
         </li>
         <li>
-            <a href="">MEN TOP</a>
+            <a href="category.html">MEN TOP</a>
             <ul class="embed-link">
                 <li class="embed-link-li">
-                    <a href="">Panjabi</a>
+                    <a href="category.html">Panjabi</a>
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                         viewBox="0 0 24 24">
                         <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                     </svg>
                     <ul class="embed-link2">
-                        <li><a href="">Semi Fit</a></li>
+                        <li><a href="category.html">Semi Fit</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Regular Fit</a></li>
+                        <li><a href="category.html">Regular Fit</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Trendy Fit</a></li>
+                        <li><a href="category.html">Trendy Fit</a></li>
                     </ul>
                 </li>
                 <div class="hr"></div>
                 <li class="embed-link-li">
-                    <a href="">Shirt</a>
+                    <a href="category.html">Shirt</a>
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                         viewBox="0 0 24 24">
                         <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                     </svg>
                     <ul class="embed-link2">
-                        <li><a href="">Formal Shirt</a></li>
+                        <li><a href="category.html">Formal Shirt</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Casual Full Sleeve</a></li>
+                        <li><a href="category.html">Casual Full Sleeve</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Casual SHort Sleeve</a></li>
+                        <li><a href="category.html">Casual SHort Sleeve</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Cuban Collar</a></li>
+                        <li><a href="category.html">Cuban Collar</a></li>
                     </ul>
                 </li>
                 <div class="hr"></div>
                 <li class="embed-link-li">
-                    <a href="">Polo</a>
+                    <a href="category.html">Polo</a>
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                         viewBox="0 0 24 24">
                         <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                     </svg>
                     <ul class="embed-link2">
-                        <li><a href="">Full Sleeve</a></li>
+                        <li><a href="category.html">Full Sleeve</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Short Sleeve</a></li>
+                        <li><a href="category.html">Short Sleeve</a></li>
                     </ul>
                 </li>
                 <div class="hr"></div>
                 <li class="embed-link-li">
-                    <a href="">T-Shirt</a>
+                    <a href="category.html">T-Shirt</a>
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                         viewBox="0 0 24 24">
                         <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                     </svg>
                     <ul class="embed-link2">
-                        <li><a href="">Full Sleeve</a></li>
+                        <li><a href="category.html">Full Sleeve</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Short Sleeve</a></li>
+                        <li><a href="category.html">Short Sleeve</a></li>
                     </ul>
                 </li>
                 <div class="hr"></div>
-                <li><a href="">Fatua</a></li>
+                <li><a href="category.html">Fatua</a></li>
                 <div class="hr"></div>
-                <li><a href="">Bapari Shirt</a></li>
+                <li><a href="category.html">Bapari Shirt</a></li>
             </ul>
         </li>
         <li>
-            <a href="">MEN BOTTOM</a>
+            <a href="category.html">MEN BOTTOM</a>
             <ul class="embed-link">
                 <li class="embed-link-li">
-                    <a href="">Pant</a>
+                    <a href="category.html">Pant</a>
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                         viewBox="0 0 24 24">
                         <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                     </svg>
                     <ul class="embed-link2">
-                        <li><a href="">Jeans</a></li>
+                        <li><a href="category.html">Jeans</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Gabardine</a></li>
+                        <li><a href="category.html">Gabardine</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Formal</a></li>
+                        <li><a href="category.html">Formal</a></li>
                     </ul>
                 </li>
                 <div class="hr"></div>
                 <li class="embed-link-li">
-                    <a href="">Trousers</a>
+                    <a href="category.html">Trousers</a>
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                         viewBox="0 0 24 24">
                         <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                     </svg>
                     <ul class="embed-link2">
-                        <li><a href="">Long Trousers</a></li>
+                        <li><a href="category.html">Long Trousers</a></li>
                         <div class="hr"></div>
-                        <li><a href="">Short Trousers</a></li>
+                        <li><a href="category.html">Short Trousers</a></li>
                     </ul>
                 </li>
                 <div class="hr"></div>
-                <li><a href="">Pajama</a></li>
+                <li><a href="category.html">Pajama</a></li>
                 <div class="hr"></div>
-                <li><a href="">Joggers</a></li>
+                <li><a href="category.html">Joggers</a></li>
             </ul>
         <li>
-            <a href="">OUTERWARE</a>
+            <a href="category.html">OUTERWARE</a>
             <ul class="embed-link">
-                <li><a href="">Blazer</a></li>
+                <li><a href="category.html">Blazer</a></li>
                 <div class="hr"></div>
-                <li><a href="">Suit</a></li>
+                <li><a href="category.html">Suit</a></li>
                 <div class="hr"></div>
-                <li><a href="">Coat</a></li>
+                <li><a href="category.html">Coat</a></li>
             </ul>
         </li>
-        <li><a href="">FRAGRANCE 50% OFF🎉</a></li>
+        <li><a href="category.html">FRAGRANCE 50% OFF🎉</a></li>
         <li>
-            <a href="">ACCESSORIES</a>
+            <a href="category.html">ACCESSORIES</a>
             <ul class="embed-link">
-                <li><a href="">Belt</a></li>
+                <li><a href="category.html">Belt</a></li>
                 <div class="hr"></div>
-                <li><a href="">Tie</a></li>
+                <li><a href="category.html">Tie</a></li>
                 <div class="hr"></div>
-                <li><a href="">Frangrance</a></li>
+                <li><a href="category.html">Frangrance</a></li>
             </ul>
         </li>
-        <li><a href="">GIFT CARD</a></li>
+        <li><a href="category.html">GIFT CARD</a></li>
     </ul>
 
     <nav class="second-nav" id="second-nav">
@@ -381,148 +381,148 @@ document.addEventListener("DOMContentLoaded", () => {
             <img src="/images/second-logo.webp" alt="">
         </a>
         <ul>
-            <li><a href="">HOME</a></li>
+            <li><a href="category.html">HOME</a></li>
             <li>
-                <a href="">EID-UL-ADHA 2026</a>
+                <a href="category.html">EID-UL-ADHA 2026</a>
                 <ul class="embed-link">
-                    <li><a href="">PANJABI</a></li>
+                    <li><a href="category.html">PANJABI</a></li>
                     <div class="hr"></div>
-                    <li><a href="">SHIRT</a></li>
+                    <li><a href="category.html">SHIRT</a></li>
                     <div class="hr"></div>
-                    <li><a href="">POLO</a></li>
+                    <li><a href="category.html">POLO</a></li>
                     <div class="hr"></div>
-                    <li><a href="">T-SHIRT</a></li>
+                    <li><a href="category.html">T-SHIRT</a></li>
                     <div class="hr"></div>
-                    <li><a href="">FATUA</a></li>
+                    <li><a href="category.html">FATUA</a></li>
                     <div class="hr"></div>
-                    <li><a href="">JEANS PANT</a></li>
+                    <li><a href="category.html">JEANS PANT</a></li>
                     <div class="hr"></div>
-                    <li><a href="">GABARDINE PANT</a></li>
+                    <li><a href="category.html">GABARDINE PANT</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">MEN TOP</a>
+                <a href="category.html">MEN TOP</a>
                 <ul class="embed-link">
                     <li class="embed-link-li">
-                        <a href="">Panjabi</a>
+                        <a href="category.html">Panjabi</a>
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                             viewBox="0 0 24 24">
                             <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                         </svg>
                         <ul class="embed-link2">
-                            <li><a href="">Semi Fit</a></li>
+                            <li><a href="category.html">Semi Fit</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Regular Fit</a></li>
+                            <li><a href="category.html">Regular Fit</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Trendy Fit</a></li>
+                            <li><a href="category.html">Trendy Fit</a></li>
                         </ul>
                     </li>
                     <div class="hr"></div>
                     <li class="embed-link-li">
-                        <a href="">Shirt</a>
+                        <a href="category.html">Shirt</a>
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                             viewBox="0 0 24 24">
                             <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                         </svg>
                         <ul class="embed-link2">
-                            <li><a href="">Formal Shirt</a></li>
+                            <li><a href="category.html">Formal Shirt</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Casual Full Sleeve</a></li>
+                            <li><a href="category.html">Casual Full Sleeve</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Casual SHort Sleeve</a></li>
+                            <li><a href="category.html">Casual SHort Sleeve</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Cuban Collar</a></li>
+                            <li><a href="category.html">Cuban Collar</a></li>
                         </ul>
                     </li>
                     <div class="hr"></div>
                     <li class="embed-link-li">
-                        <a href="">Polo</a>
+                        <a href="category.html">Polo</a>
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                             viewBox="0 0 24 24">
                             <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                         </svg>
                         <ul class="embed-link2">
-                            <li><a href="">Full Sleeve</a></li>
+                            <li><a href="category.html">Full Sleeve</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Short Sleeve</a></li>
+                            <li><a href="category.html">Short Sleeve</a></li>
                         </ul>
                     </li>
                     <div class="hr"></div>
                     <li class="embed-link-li">
-                        <a href="">T-Shirt</a>
+                        <a href="category.html">T-Shirt</a>
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                             viewBox="0 0 24 24">
                             <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                         </svg>
                         <ul class="embed-link2">
-                            <li><a href="">Full Sleeve</a></li>
+                            <li><a href="category.html">Full Sleeve</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Short Sleeve</a></li>
+                            <li><a href="category.html">Short Sleeve</a></li>
                         </ul>
                     </li>
                     <div class="hr"></div>
-                    <li><a href="">Fatua</a></li>
+                    <li><a href="category.html">Fatua</a></li>
                     <div class="hr"></div>
-                    <li><a href="">Bapari Shirt</a></li>
+                    <li><a href="category.html">Bapari Shirt</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">MEN BOTTOM</a>
+                <a href="category.html">MEN BOTTOM</a>
                 <ul class="embed-link">
                     <li class="embed-link-li">
-                        <a href="">Pant</a>
+                        <a href="category.html">Pant</a>
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                             viewBox="0 0 24 24">
                             <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                         </svg>
                         <ul class="embed-link2">
-                            <li><a href="">Jeans</a></li>
+                            <li><a href="category.html">Jeans</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Gabardine</a></li>
+                            <li><a href="category.html">Gabardine</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Formal</a></li>
+                            <li><a href="category.html">Formal</a></li>
                         </ul>
                     </li>
                     <div class="hr"></div>
                     <li class="embed-link-li">
-                        <a href="">Trousers</a>
+                        <a href="category.html">Trousers</a>
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-caret"
                             viewBox="0 0 24 24">
                             <path d="m7.75 1.344-1.5 1.312L14.656 12 6.25 21.344l1.5 1.312 9-10 .594-.656-.594-.656Z" />
                         </svg>
                         <ul class="embed-link2">
-                            <li><a href="">Long Trousers</a></li>
+                            <li><a href="category.html">Long Trousers</a></li>
                             <div class="hr"></div>
-                            <li><a href="">Short Trousers</a></li>
+                            <li><a href="category.html">Short Trousers</a></li>
                         </ul>
                     </li>
                     <div class="hr"></div>
-                    <li><a href="">Pajama</a></li>
+                    <li><a href="category.html">Pajama</a></li>
                     <div class="hr"></div>
-                    <li><a href="">Joggers</a></li>
+                    <li><a href="category.html">Joggers</a></li>
                 </ul>
             <li>
-                <a href="">OUTERWARE</a>
+                <a href="category.html">OUTERWARE</a>
                 <ul class="embed-link">
-                    <li><a href="">Blazer</a></li>
+                    <li><a href="category.html">Blazer</a></li>
                     <div class="hr"></div>
-                    <li><a href="">Suit</a></li>
+                    <li><a href="category.html">Suit</a></li>
                     <div class="hr"></div>
-                    <li><a href="">Coat</a></li>
+                    <li><a href="category.html">Coat</a></li>
                 </ul>
             </li>
-            <li><a href="">FRAGRANCE 50% OFF🎉</a></li>
+            <li><a href="category.html">FRAGRANCE 50% OFF🎉</a></li>
             <li>
-                <a href="">ACCESSORIES</a>
+                <a href="category.html">ACCESSORIES</a>
                 <ul class="embed-link">
-                    <li><a href="">Belt</a></li>
+                    <li><a href="category.html">Belt</a></li>
                     <div class="hr"></div>
-                    <li><a href="">Tie</a></li>
+                    <li><a href="category.html">Tie</a></li>
                     <div class="hr"></div>
-                    <li><a href="">Frangrance</a></li>
+                    <li><a href="category.html">Frangrance</a></li>
                 </ul>
             </li>
-            <li><a href="">GIFT CARD</a></li>
+            <li><a href="category.html">GIFT CARD</a></li>
         </ul>
         <div>
             <button onclick="togglePanel(3)">
@@ -717,7 +717,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
                             alt="Cloth">
                     </div>
-                    <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                    <a href="product.html" class="sh">Panjabi:Semi Fit_Print_361#3</a>
                     <p>Tk 2,890.00</p>
                 </div>
                 <div class="product-card">
@@ -725,7 +725,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="https://dorjibari.com.bd/cdn/shop/files/1_25171f26-b258-4c7e-8ff2-a6edc57f3003.jpg?v=1770441509"
                             alt="Cloth">
                     </div>
-                    <a href="" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
+                    <a href="product.html" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
                     <p>Tk 2,090.00</p>
                 </div>
                 <div class="product-card">
@@ -733,7 +733,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="https://dorjibari.com.bd/cdn/shop/files/Executive_formal_shirt1_2d7b08d9-74dd-4075-b7a7-c345df1425b8.jpg?v=1771132735"
                             alt="Cloth">
                     </div>
-                    <a href="" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
+                    <a href="product.html" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
                     <p>Tk 1,990.00</p>
                 </div>
                 <div class="product-card">
@@ -741,7 +741,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="https://dorjibari.com.bd/cdn/shop/files/Panjabi_SemiFit_01.jpg?v=1771736378"
                             alt="Cloth">
                     </div>
-                    <a href="" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
+                    <a href="product.html" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
                     <p>Tk 2,890.00</p>
                 </div>
             </div>
@@ -758,7 +758,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </svg>
             </div>
             <br>
-            <a href="">HOME</a>
+            <a href="index.html">HOME</a>
             <div class="hr"></div>
             <div class="flex" onclick="bringMenu('men-top')">
                 MEN TOP
@@ -781,7 +781,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
             </div>
             <div class="hr"></div>
-            <a href="">FRAGRANCE 50% OFF🎉</a>
+            <a href="category.html">FRAGRANCE 50% OFF🎉</a>
             <div class="hr"></div>
             <div class="flex" onclick="bringMenu('accessories')">
                 ACCESSORIES
@@ -790,7 +790,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
             </div>
             <div class="hr"></div>
-            <a href="">GIFT CARD</a>
+            <a href="category.html">GIFT CARD</a>
             <div class="hr"></div>
             <div class="flex-1">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-account stroke-w-0 w-h-"
@@ -850,7 +850,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>MEN TOP</p>
             </div>
-            <a href="">Go To MEN TOP</a>
+            <a href="category.html">Go To MEN TOP</a>
             <div class="hr"></div>
             <div class="flex" onclick="bringMenu('panjabi')">
                 Panjabi
@@ -880,9 +880,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
             </div>
             <div class="hr"></div>
-            <a href="">Fatua</a>
+            <a href="category.html">Fatua</a>
             <div class="hr"></div>
-            <a href="">Bapari Shirt</a>
+            <a href="category.html">Bapari Shirt</a>
             <div class="hr"></div>
         </div>
         <div class="small-screen-menubar-sub" id="panjabi">
@@ -894,13 +894,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>MEN TOP</p>
             </div>
-            <a href="">Go To Panjabi</a>
+            <a href="category.html">Go To Panjabi</a>
             <div class="hr"></div>
-            <a href="">Semi Fit</a>
+            <a href="category.html">Semi Fit</a>
             <div class="hr"></div>
-            <a href="">Regular Fit</a>
+            <a href="category.html">Regular Fit</a>
             <div class="hr"></div>
-            <a href="">Trendy Fit</a>
+            <a href="category.html">Trendy Fit</a>
             <div class="hr"></div>
         </div>
         <div class="small-screen-menubar-sub" id="shirt">
@@ -912,15 +912,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>MEN TOP</p>
             </div>
-            <a href="">Go To Shirt</a>
+            <a href="category.html">Go To Shirt</a>
             <div class="hr"></div>
-            <a href="">Formal Shirt</a>
+            <a href="category.html">Formal Shirt</a>
             <div class="hr"></div>
-            <a href="">Casual Full Sleeve</a>
+            <a href="category.html">Casual Full Sleeve</a>
             <div class="hr"></div>
-            <a href="">Casual Short Sleeve</a>
+            <a href="category.html">Casual Short Sleeve</a>
             <div class="hr"></div>
-            <a href="">Cuban Collar</a>
+            <a href="category.html">Cuban Collar</a>
         </div>
         <div class="small-screen-menubar-sub" id="polo">
             <div class="sub-menubar-header">
@@ -931,11 +931,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>MEN TOP</p>
             </div>
-            <a href="">Go To Polo</a>
+            <a href="category.html">Go To Polo</a>
             <div class="hr"></div>
-            <a href="">Full Sleeve</a>
+            <a href="category.html">Full Sleeve</a>
             <div class="hr"></div>
-            <a href="">Short Sleeve</a>
+            <a href="category.html">Short Sleeve</a>
         </div>
         <div class="small-screen-menubar-sub" id="t-shirt">
             <div class="sub-menubar-header">
@@ -946,11 +946,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>MEN TOP</p>
             </div>
-            <a href="">Go To T-Shirt</a>
+            <a href="category.html">Go To T-Shirt</a>
             <div class="hr"></div>
-            <a href="">Full Sleeve</a>
+            <a href="category.html">Full Sleeve</a>
             <div class="hr"></div>
-            <a href="">Short Sleeve</a>
+            <a href="category.html">Short Sleeve</a>
             <div class="hr"></div>
         </div>
         <div class="small-screen-menubar-sub" id="men-bottom">
@@ -962,7 +962,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>MEN BOTTOM</p>
             </div>
-            <a href="">Go To MEN BOTTOM</a>
+            <a href="category.html">Go To MEN BOTTOM</a>
             <div class="hr"></div>
             <div class="flex" onclick="bringMenu('pant')">
                 Pant
@@ -978,9 +978,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
             </div>
             <div class="hr"></div>
-            <a href="">Pajama</a>
+            <a href="category.html">Pajama</a>
             <div class="hr"></div>
-            <a href="">Joggers</a>
+            <a href="category.html">Joggers</a>
             <div class="hr"></div>
         </div>
         <div class="small-screen-menubar-sub" id="pant">
@@ -992,13 +992,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>MEN BOTTOM</p>
             </div>
-            <a href="">Go To Pant</a>
+            <a href="category.html">Go To Pant</a>
             <div class="hr"></div>
-            <a href="">Jeans</a>
+            <a href="category.html">Jeans</a>
             <div class="hr"></div>
-            <a href="">Gabardine</a>
+            <a href="category.html">Gabardine</a>
             <div class="hr"></div>
-            <a href="">Formal</a>
+            <a href="category.html">Formal</a>
             <div class="hr"></div>
         </div>
         <div class="small-screen-menubar-sub" id="trousers">
@@ -1010,11 +1010,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>MEN BOTTOM</p>
             </div>
-            <a href="">Go To Trousers</a>
+            <a href="category.html">Go To Trousers</a>
             <div class="hr"></div>
-            <a href="">Long Trousers</a>
+            <a href="category.html">Long Trousers</a>
             <div class="hr"></div>
-            <a href="">Short Trousers</a>
+            <a href="category.html">Short Trousers</a>
             <div class="hr"></div>
         </div>
         <div class="small-screen-menubar-sub" id="outerware">
@@ -1026,13 +1026,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>OUTERWARE</p>
             </div>
-            <a href="">Go To OUTERWARE</a>
+            <a href="category.html">Go To OUTERWARE</a>
             <div class="hr"></div>
-            <a href="">Blazer</a>
+            <a href="category.html">Blazer</a>
             <div class="hr"></div>
-            <a href="">Suit</a>
+            <a href="category.html">Suit</a>
             <div class="hr"></div>
-            <a href="">Coat</a>
+            <a href="category.html">Coat</a>
             <div class="hr"></div>
         </div>
         <div class="small-screen-menubar-sub" id="accessories">
@@ -1044,13 +1044,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
                 <p>ACCESSORIES</p>
             </div>
-            <a href="">Go To ACCESSORIES</a>
+            <a href="category.html">Go To ACCESSORIES</a>
             <div class="hr"></div>
-            <a href="">Belt</a>
+            <a href="category.html">Belt</a>
             <div class="hr"></div>
-            <a href="">Tie</a>
+            <a href="category.html">Tie</a>
             <div class="hr"></div>
-            <a href="">Frangrance</a>
+            <a href="category.html">Frangrance</a>
             <div class="hr"></div>
         </div>
     </div>
@@ -1157,7 +1157,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
                             alt="Cloth">
                     </div>
-                    <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                    <a href="category.html" class="sh">Panjabi:Semi Fit_Print_361#3</a>
                     <p>Tk 2,890.00</p>
                 </div>
                 <div class="product-card">
@@ -1165,7 +1165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="https://dorjibari.com.bd/cdn/shop/files/1_25171f26-b258-4c7e-8ff2-a6edc57f3003.jpg?v=1770441509"
                             alt="Cloth">
                     </div>
-                    <a href="" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
+                    <a href="category.html" class="sh">Panjabi_Regular Fit_Solid_166#5</a>
                     <p>Tk 2,090.00</p>
                 </div>
                 <div class="product-card">
@@ -1173,7 +1173,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="https://dorjibari.com.bd/cdn/shop/files/Executive_formal_shirt1_2d7b08d9-74dd-4075-b7a7-c345df1425b8.jpg?v=1771132735"
                             alt="Cloth">
                     </div>
-                    <a href="" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
+                    <a href="category.html" class="sh">Shirt:Full Sleeve_Semi Fit_Stripe_342#1</a>
                     <p>Tk 1,990.00</p>
                 </div>
                 <div class="product-card">
@@ -1181,7 +1181,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="https://dorjibari.com.bd/cdn/shop/files/Panjabi_SemiFit_01.jpg?v=1771736378"
                             alt="Cloth">
                     </div>
-                    <a href="" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
+                    <a href="category.html" class="sh">Panjabi:Semi Fit_Semi Fit_Solid-Slub_354#1</a>
                     <p>Tk 2,890.00</p>
                 </div>
             </div>
@@ -1191,125 +1191,145 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
     `;
 
-  document.getElementById("dynamic-component").insertAdjacentHTML("afterbegin", dynamicComponents);
-  document.getElementById("footer").innerHTML = footer;
+    document
+        .getElementById("dynamic-component")
+        .insertAdjacentHTML("afterbegin", dynamicComponents);
+    document.getElementById("footer").innerHTML = footer;
 
-  let headerSuggestion = document.getElementById("header-input-suggestion");
-  const headerInputPlace = document.getElementById("header-input-place");
-  let sidebarOverlay = document.getElementById("sidebar-overlay");
-  let secondHeaderPlace = document.getElementById("second-header");
-  let secondNavPlace = document.getElementById("second-nav");
+    let headerSuggestion = document.getElementById("header-input-suggestion");
+    const headerInputPlace = document.getElementById("header-input-place");
+    let sidebarOverlay = document.getElementById("sidebar-overlay");
+    let secondHeaderPlace = document.getElementById("second-header");
+    let secondNavPlace = document.getElementById("second-nav");
 
-  document.addEventListener("click", (e) => {
-    if (!headerInputPlace.contains(e.target)) {
-      headerSuggestion.style.display = "none";
+    document.addEventListener("click", (e) => {
+        if (!headerInputPlace.contains(e.target)) {
+            headerSuggestion.style.display = "none";
+        }
+    });
+
+    let lastScrollY = window.scrollY;
+    window.addEventListener("scroll", function () {
+        const currentScrollY = window.scrollY;
+        const isScrollingUp = currentScrollY < lastScrollY;
+        if (currentScrollY >= 122.5 && isScrollingUp) {
+            secondNavPlace.style.opacity = 1;
+            secondNavPlace.style.pointerEvents = "auto";
+        } else {
+            secondNavPlace.style.opacity = 0;
+            secondNavPlace.style.pointerEvents = "none";
+        }
+        if (window.innerWidth <= 1050) {
+            if (currentScrollY < 51 || isScrollingUp)
+                secondHeaderPlace.style.transform = "translateY(0)";
+            else secondHeaderPlace.style.transform = "translateY(-100%)";
+        }
+
+        lastScrollY = currentScrollY;
+    });
+
+    let isFooterLinkOpen = false;
+    function expandFooterLink() {
+        let plusOneFooter = document.getElementById("plus-one");
+        let plusTwoFooter = document.getElementById("plus-two");
+        let footerLinksPlace = document.getElementById("footer-links-place");
+        if (!footerLinksPlace) {
+            console.error("One or more footer elements could not be found in the DOM.");
+            return;
+        }
+        if (!isFooterLinkOpen) {
+            plusOneFooter.style.transform = "translateX(-50%) rotate(90deg)";
+            plusTwoFooter.style.opacity = 0;
+            footerLinksPlace.style.transform = "translateY(0px)";
+            footerLinksPlace.style.opacity = 1;
+            isFooterLinkOpen = true;
+        } else {
+            plusOneFooter.style.transform = "translateX(-50%) rotate(0deg)";
+            plusTwoFooter.style.opacity = 1;
+            footerLinksPlace.style.transform = "translateY(-20px)";
+            footerLinksPlace.style.opacity = 0;
+            isFooterLinkOpen = false;
+        }
     }
-  });
+    window.expandFooterLink = expandFooterLink;
 
-  let lastScrollY = window.scrollY;
-  window.addEventListener("scroll", function () {
-    const currentScrollY = window.scrollY;
-    const isScrollingUp = currentScrollY < lastScrollY;
-    if (currentScrollY >= 122.5 && isScrollingUp) {
-      secondNavPlace.style.opacity = 1;
-      secondNavPlace.style.pointerEvents = "auto";
-    } else {
-      secondNavPlace.style.opacity = 0;
-      secondNavPlace.style.pointerEvents = "none";
+    let currentPanel = null;
+
+    function togglePanel(id) {
+        switch (id) {
+            case 1: {
+                const cart = document.getElementById("shopping-cart-sidebar");
+                cart.style.transform =
+                    cart.style.transform === "translateX(0px)"
+                        ? "translateX(100%)"
+                        : "translateX(0px)";
+                sidebarOverlay.style.display =
+                    cart.style.transform === "translateX(0px)" ? "block" : "none";
+                break;
+            }
+
+            case 2: {
+                const login = document.getElementById("login-sidebar");
+                login.style.transform =
+                    login.style.transform === "translateX(0px)"
+                        ? "translateX(100%)"
+                        : "translateX(0px)";
+                sidebarOverlay.style.display =
+                    login.style.transform === "translateX(0px)" ? "block" : "none";
+                break;
+            }
+
+            case 3: {
+                const search = document.getElementById("scroll-header-input-box");
+                search.style.display = search.style.display === "block" ? "none" : "block";
+                sidebarOverlay.style.display =
+                    sidebarOverlay.style.display === "block" ? "none" : "block";
+                break;
+            }
+
+            case 4: {
+                const menu = document.getElementById("small-screen-menubar");
+                menu.style.transform =
+                    menu.style.transform === "translateX(0px)"
+                        ? "translateX(-100%)"
+                        : "translateX(0px)";
+                sidebarOverlay.style.display =
+                    sidebarOverlay.style.display === "block" ? "none" : "block";
+                break;
+            }
+
+            case 5: {
+                const search = document.getElementById("second-header-input");
+                search.style.transform =
+                    search.style.transform === "translateX(0px)"
+                        ? "translateX(-100%)"
+                        : "translateX(0px)";
+                sidebarOverlay.style.display =
+                    sidebarOverlay.style.display === "block" ? "none" : "block";
+                break;
+            }
+            case 6: {
+                const search = document.getElementById("header-input-suggestion");
+                search.style.display = search.style.display === "block" ? "none" : "block";
+                break;
+            }
+        }
     }
-    if (window.innerWidth <= 1050) {
-      if (currentScrollY < 51 || isScrollingUp) secondHeaderPlace.style.transform = "translateY(0)";
-      else secondHeaderPlace.style.transform = "translateY(-100%)";
+    window.togglePanel = togglePanel;
+
+    let prevMenuStack = [];
+    function bringMenu(id) {
+        if (id == 1) {
+            const prevMenu = prevMenuStack[prevMenuStack.length - 1];
+            if (prevMenu) {
+                document.getElementById(prevMenu).style.transform = "translateX(-100%)";
+                prevMenuStack.pop();
+            }
+            return;
+        }
+        document.getElementById(id).style.transform = "translateX(0)";
+        document.getElementById(id).style.overflowY = "auto";
+        prevMenuStack.push(id);
     }
-
-    lastScrollY = currentScrollY;
-  });
-
-  let isFooterLinkOpen = false;
-  function expandFooterLink() {
-    let plusOneFooter = document.getElementById("plus-one");
-    let plusTwoFooter = document.getElementById("plus-two");
-    let footerLinksPlace = document.getElementById("footer-links-place");
-    if (!footerLinksPlace) {
-      console.error("One or more footer elements could not be found in the DOM.");
-      return;
-    }
-    if (!isFooterLinkOpen) {
-      plusOneFooter.style.transform = "translateX(-50%) rotate(90deg)";
-      plusTwoFooter.style.opacity = 0;
-      footerLinksPlace.style.transform = "translateY(0px)";
-      footerLinksPlace.style.opacity = 1;
-      isFooterLinkOpen = true;
-    } else {
-      plusOneFooter.style.transform = "translateX(-50%) rotate(0deg)";
-      plusTwoFooter.style.opacity = 1;
-      footerLinksPlace.style.transform = "translateY(-20px)";
-      footerLinksPlace.style.opacity = 0;
-      isFooterLinkOpen = false;
-    }
-  }
-  window.expandFooterLink = expandFooterLink;
-
-  let currentPanel = null;
-
-  function togglePanel(id) {
-    switch (id) {
-      case 1: {
-        const cart = document.getElementById("shopping-cart-sidebar");
-        cart.style.transform = cart.style.transform === "translateX(0px)" ? "translateX(440px)" : "translateX(0px)";
-        sidebarOverlay.style.display = cart.style.transform === "translateX(0px)" ? "block" : "none";
-        break;
-      }
-
-      case 2: {
-        const login = document.getElementById("login-sidebar");
-        login.style.transform = login.style.transform === "translateX(0px)" ? "translateX(440px)" : "translateX(0px)";
-        sidebarOverlay.style.display = login.style.transform === "translateX(0px)" ? "block" : "none";
-        break;
-      }
-
-      case 3: {
-        const search = document.getElementById("scroll-header-input-box");
-        search.style.display = search.style.display === "block" ? "none" : "block";
-        sidebarOverlay.style.display = sidebarOverlay.style.display === "block" ? "none" : "block";
-        break;
-      }
-
-      case 4: {
-        const menu = document.getElementById("small-screen-menubar");
-        menu.style.transform = menu.style.transform === "translateX(0px)" ? "translateX(-100%)" : "translateX(0px)";
-        sidebarOverlay.style.display = sidebarOverlay.style.display === "block" ? "none" : "block";
-        break;
-      }
-
-      case 5: {
-        const search = document.getElementById("second-header-input");
-        search.style.transform = search.style.transform === "translateX(0px)" ? "translateX(-100%)" : "translateX(0px)";
-        sidebarOverlay.style.display = sidebarOverlay.style.display === "block" ? "none" : "block";
-        break;
-      }
-      case 6: {
-        const search = document.getElementById("header-input-suggestion");
-        search.style.display = search.style.display === "block" ? "none" : "block";
-        break;
-      }
-    }
-  }
-  window.togglePanel = togglePanel;
-
-  let prevMenuStack = [];
-  function bringMenu(id) {
-    if (id == 1) {
-      const prevMenu = prevMenuStack[prevMenuStack.length - 1];
-      if (prevMenu) {
-        document.getElementById(prevMenu).style.transform = "translateX(-100%)";
-        prevMenuStack.pop();
-      }
-      return;
-    }
-    document.getElementById(id).style.transform = "translateX(0)";
-    document.getElementById(id).style.overflowY = "auto";
-    prevMenuStack.push(id);
-  }
-  window.bringMenu = bringMenu;
+    window.bringMenu = bringMenu;
 });

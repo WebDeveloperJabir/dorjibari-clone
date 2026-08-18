@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
       }
       homeCard = `<div class="product-card">
-            <div>
+            <div class="product-image">
                 <img src=${randomData[randInd]?.img} alt="Cloth">
                 <div class="home-size">
                     <a href="">M</a>
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         d="M255.997 154.725c-55.842 0-101.275 45.433-101.275 101.275s45.433 101.275 101.275 101.275S357.272 311.842 357.272 256s-45.433-101.275-101.275-101.275m0 168.791c-37.23 0-67.516-30.287-67.516-67.516s30.287-67.516 67.516-67.516 67.516 30.287 67.516 67.516-30.286 67.516-67.516 67.516" />
                 </svg>
             </div>
-            <a href="" class="sh">${randomData[randInd]?.title}</a>
+            <a href="product.html" class="sh">${randomData[randInd]?.title}</a>
             <p>Tk ${randomData[randInd]?.price}</p>
         </div>`;
       randInd++;

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="dynamic-component">
+            <!-- Will be inserted by JS -->
+        </div>
+        <p class="category-path">Home > PANJABI</p>
+        <div class="single-product">
+            <div class="quick-left-side">
+                <img
+                    src="https://dorjibari.com.bd/cdn/shop/files/01_340f2cb4-71f6-4f85-81a5-aea3dd382113.jpg?v=1777363021"
+                    alt=""
+                />
+                <br />
+                <div>
+                    <img
+                        src="https://dorjibari.com.bd/cdn/shop/files/01_340f2cb4-71f6-4f85-81a5-aea3dd382113.jpg?v=1777363021"
+                        alt=""
+                    />
+                    <img
+                        src="https://dorjibari.com.bd/cdn/shop/files/02_d75714e3-90c6-41da-bc5f-5a70cd90a5a2_compact.jpg?v=1777363021"
+                        alt=""
+                    />
+                    <img
+                        src="https://dorjibari.com.bd/cdn/shop/files/03_35e38bde-cc5e-40cc-b7aa-466a9baed1f3_compact.jpg?v=1777363021"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div>
+                <h3 id="quick-prod-name">Trouser</h3>
+                <p style="font-size: 17px;font-weight: bold;">Tk 1,590.00</p>
+                <br>
+                <p style="color: #df5757; font-size: 13px; font-weight: bold">
+                    Please hurry! Only <span class="product-left-stock">7</span> left in stock
+                </p>
+                <div class="stock-bar">
+                    <div style="width: 200px"></div>
+                </div>
+                <br />
+                <p style="font-size: 13px">
+                    500153048011 <br />
+                    7 In Stock
+                </p>
+                <br>
+                <p style="font-size: 13px"><b>Size:</b> <span id="quick-size">30</span></p>
+                <div id="quick-size-list">
+                    <p class="quick-size-active">30</p>
+                    <p>32</p>
+                    <p>34</p>
+                    <p>36</p>
+                </div>
+                <br>
+                <p style="font-size: 13px">
+                    Subtotal: <b>Tk <span id="quick-subtotal">1590.00</span></b>
+                </p>
+                <br>
+                <p style="font-size: 13px"><b>Quantity:</b></p>
+                <div class="addtocart-heart">
+                    <div class="product-counter">
+                        <p class="counter-sign">-</p>
+                        <p id="quick-count">1</p>
+                        <p class="counter-sign">+</p>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <div onclick="this.classList.toggle('quick-liked-prod')">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            viewBox="0 0 32 32"
+                        >
+                            <path
+                                d="M9.5 5C5.363 5 2 8.402 2 12.5c0 1.43.648 2.668 1.25 3.563a9.3 9.3 0 0 0 1.219 1.468L15.28 28.375l.719.719.719-.719L27.53 17.531S30 15.355 30 12.5C30 8.402 26.637 5 22.5 5c-3.434 0-5.645 2.066-6.5 2.938C15.145 7.066 12.934 5 9.5 5m0 2c2.988 0 5.75 2.906 5.75 2.906l.75.844.75-.844S19.512 7 22.5 7c3.043 0 5.5 2.496 5.5 5.5 0 1.543-1.875 3.625-1.875 3.625L16 26.25 5.875 16.125s-.484-.465-.969-1.187C4.422 14.215 4 13.273 4 12.5 4 9.496 6.457 7 9.5 7"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <button class="buy-it-now">BUY IT NOW</button>
+                <div class="viewers-div">
+                    <svg class="icon" viewBox="0 0 511.626 511.626">
+                        <path
+                            d="M505.918 236.117q-39.978-65.38-107.497-105.065Q330.9 91.366 255.813 91.365c-50.059 0-97.595 13.225-142.61 39.687Q45.679 170.736 5.708 236.117 0 246.109 0 255.818q0 9.71 5.708 19.699c26.647 43.589 62.479 78.614 107.495 105.064 45.015 26.46 92.551 39.68 142.61 39.68q75.089.002 142.608-39.536c45.012-26.361 80.852-61.432 107.497-105.208q5.708-9.987 5.708-19.699 0-9.71-5.708-19.701m-311.35-78.087q25.55-25.552 61.242-25.554c3.805 0 7.043 1.336 9.709 3.999 2.662 2.664 4 5.901 4 9.707 0 3.809-1.338 7.044-3.994 9.704-2.662 2.667-5.902 3.999-9.708 3.999-16.368 0-30.362 5.808-41.971 17.416q-17.418 17.42-17.416 41.971c0 3.811-1.336 7.044-3.999 9.71q-4 4-9.707 3.999-5.712 0-9.71-3.999-4-4-3.999-9.71c0-23.79 8.52-44.207 25.553-61.242m185.299 191.01c-38.164 23.12-79.514 34.687-124.054 34.687q-66.808.002-124.051-34.687c-57.243-34.689-69.901-54.2-95.215-93.222 28.931-44.921 65.19-78.518 108.777-100.783-11.61 19.792-17.417 41.207-17.417 64.236 0 35.216 12.517 65.329 37.544 90.362s55.151 37.544 90.362 37.544c35.214 0 65.329-12.518 90.362-37.544s37.545-55.146 37.545-90.362c0-23.029-5.808-44.447-17.419-64.236 43.585 22.265 79.846 55.865 108.776 100.783q-37.964 58.532-95.21 93.222"
+                        />
+                    </svg>
+                    <p><span id="quick-viewers">10</span> customers are viewing this product</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

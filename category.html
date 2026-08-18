@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Men's Panjabi in Bangladesh</title>
+        <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div id="dynamic-component">
+            <!-- Will be inserted by JS -->
+        </div>
+        <p class="category-path">Home > PANJABI</p>
+        <div class="category">
+            <div class="filter" id="filter">
+                <div class="black-cross filter-cross" onclick="togglePanelProd(1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                        <path
+                            d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z"
+                        ></path>
+                    </svg>
+                </div>
+                <h4>CATEGORIES</h4>
+                <hr />
+                <h4 style="margin-top: 50px">AVAILABILITY (<span>1</span>)</h4>
+                <hr />
+                <input type="checkbox" name="" id="" />
+                <label for="">In Stock(<span>216</span>)</label><br />
+                <input type="checkbox" name="" id="" />
+                <label for="">Out Of Stock(<span>88</span>)</label>
+                <br /><br /><br />
+                <h4>PRICE</h4>
+                <hr />
+                <div class="slider-container">
+                    <div class="slider-track"></div>
+                    <div class="slider-range" id="slider-range"></div>
+
+                    <input type="range" id="min-slider" min="0" max="1000" value="100" />
+
+                    <input type="range" id="max-slider" min="0" max="1000" value="900" />
+                </div>
+                <div class="price-range">
+                    <div>৳<input type="number" name="" id="min-value" value="0" /></div>
+                    <span style="font-size: 12px">to</span>
+                    <div>৳<input type="number" name="" id="max-value" value="0" /></div>
+                </div>
+                <button class="filter-apply">APPLY</button>
+            </div>
+            <div class="products-place">
+                <div>
+                    <div class="banner-clip">
+                        <img src="images/Panjabi-Banner.webp" alt="" />
+                    </div>
+                </div>
+                <h1>PANJABI</h1>
+                <p class="products-place-text">
+                    <i>
+                        Elevate your traditional and casual wardrobe with Dorjibari’s Men’s Panjabi
+                        Collection. Designed with comfort and style in mind, our panjabis feature
+                        quality fabrics and modern patterns that blend tradition with contemporary
+                        fashion. Perfect for Eid, gatherings, and daily wear, these panjabis are
+                        crafted for a refined look and comfortable fit. Available in a variety of
+                        colors, styles, and sizes, shop the best panjabi styles online in Bangladesh
+                        with fast delivery and easy ordering. Discover your perfect panjabi at
+                        Dorjibari today.
+                    </i>
+                </p>
+                <hr style="margin-bottom: 20px" />
+                <div class="product-filter">
+                    <div class="small-filter" onclick="togglePanelProd(1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            class="icon icon-sidebar"
+                            viewBox="0 0 368.167 368.167"
+                        >
+                            <path
+                                d="M248.084 96.684h12c4.4 0 8-3.6 8-8s-3.6-8-8-8h-12c-4.4 0-8 3.6-8 8s3.6 8 8 8"
+                            />
+                            <path
+                                d="M366.484 25.484c-2.8-5.6-8.4-8.8-14.4-8.8h-336c-6 0-11.6 3.6-14.4 8.8-2.8 5.6-2 12 1.6 16.8l141.2 177.6v115.6c0 6 3.2 11.2 8.4 14 2.4 1.2 4.8 2 7.6 2 3.2 0 6.4-.8 9.2-2.8l44.4-30.8c6.4-4.8 10-12 10-19.6v-78.8l140.8-177.2c3.6-4.8 4.4-11.2 1.6-16.8m-156.8 186.4c-.8 1.2-1.6 2.8-1.6 4.8v81.2c0 2.8-1.2 5.2-3.2 6.8l-44.4 30.8v-118.8c0-2.8-1.2-5.2-3.2-6.4l-90.4-113.6h145.2c4.4 0 8-3.6 8-8s-3.6-8-8-8h-157.6l-38.4-48h336z"
+                            />
+                        </svg>
+                        <span>Filter</span>
+                    </div>
+                    <div class="view-as-filter" id="view-as-filter">
+                        <span class="view-as">VIEW AS</span>
+                        <div
+                            class="three-image-sign hamburger-1 resizer"
+                            onclick="resizeProdSection(5, event)"
+                        >
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div
+                            class="two-image-sign hamburger-2 resizer"
+                            style="width: 19px"
+                            onclick="resizeProdSection(2, event)"
+                        >
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div
+                            class="two-image-sign hamburger-3 resizer"
+                            style="width: 28px"
+                            onclick="resizeProdSection(3, event)"
+                        >
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div
+                            class="two-image-sign hamburger-4 active resizer"
+                            style="width: 36px"
+                            onclick="resizeProdSection(4, event)"
+                        >
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div
+                            class="two-image-sign hamburger-5 resizer"
+                            style="width: auto"
+                            onclick="resizeProdSection(1, event)"
+                        >
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="dropdown-filter-place">
+                        <div
+                            class="items-per-page"
+                            style="margin-right: 30px"
+                            onclick="showDropDown('size-dropdown-button', 'size-dropdown')"
+                        >
+                            <span>ITEMS PER PAGE</span>
+                            <div>
+                                <ul id="size-dropdown">
+                                    <li>10</li>
+                                    <li>15</li>
+                                    <li>20</li>
+                                    <li>25</li>
+                                    <li>30</li>
+                                    <li>50</li>
+                                </ul>
+                                <span id="size-dropdown-show">20</span>
+                                <button>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xml:space="preserve"
+                                        viewBox="0 0 217.5 127.7"
+                                        id="size-dropdown-button"
+                                    >
+                                        <path
+                                            d="m9.2 9.7 99.6 99.6L208.2 9.2"
+                                            style="
+                                                fill: none;
+                                                stroke: #969696;
+                                                stroke-width: 26;
+                                                stroke-miterlimit: 10;
+                                            "
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="items-per-page"
+                            onclick="showDropDown('sort-dropdown-button', 'sort-dropdown')"
+                        >
+                            <span>SORT BY</span>
+                            <div>
+                                <ul id="sort-dropdown">
+                                    <li>Featured</li>
+                                    <li>Most relevant</li>
+                                    <li>Best selling</li>
+                                    <li>Alphabetically, A-Z</li>
+                                    <li>Alphabetically, Z-A</li>
+                                    <li>Price, low to high</li>
+                                    <li>Price, high to low</li>
+                                    <li>Date, old to new</li>
+                                    <li>Date, new to old</li>
+                                </ul>
+                                <span id="sort-dropdown-show">20</span>
+                                <button>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xml:space="preserve"
+                                        viewBox="0 0 217.5 127.7"
+                                        id="sort-dropdown-button"
+                                    >
+                                        <path
+                                            d="m9.2 9.7 99.6 99.6L208.2 9.2"
+                                            style="
+                                                fill: none;
+                                                stroke: #969696;
+                                                stroke-width: 26;
+                                                stroke-miterlimit: 10;
+                                            "
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-sort" onclick="togglePanelProd(2)"><span>Sort</span> ⬇</div>
+                </div>
+                <div class="category-products" id="category-products">
+                    <div class="product-card category-card">
+                        <div>
+                            <div class="product-image">
+                                <img
+                                    src="https://dorjibari.com.bd/cdn/shop/files/panjabi_semifit_dorjibari.jpg?v=1771154156"
+                                    alt=""
+                                />
+                                <div class="home-size">
+                                    <a href="">M</a>
+                                    <a href="">L</a>
+                                    <a href="">XL</a>
+                                    <a href="">XXL</a>
+                                </div>
+                                <div class="ab b1">
+                                    <div style="margin-right: 8px">
+                                        <span style="margin-right: 3px">Add</span>To Wishlist
+                                    </div>
+                                    <svg role="img" aria-hidden="true" viewBox="0 0 512 512">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M474.644,74.27C449.391,45.616,414.358,29.836,376,29.836c-53.948,0-88.103,32.22-107.255,59.25 c-4.969,7.014-9.196,14.047-12.745,20.665c-3.549-6.618-7.775-13.651-12.745-20.665c-19.152-27.03-53.307-59.25-107.255-59.25 c-38.358,0-73.391,15.781-98.645,44.435C13.267,101.605,0,138.213,0,177.351c0,42.603,16.633,82.228,52.345,124.7 c31.917,37.96,77.834,77.088,131.005,122.397c19.813,16.884,40.302,34.344,62.115,53.429l0.655,0.574 c2.828,2.476,6.354,3.713,9.88,3.713s7.052-1.238,9.88-3.713l0.655-0.574c21.813-19.085,42.302-36.544,62.118-53.431 c53.168-45.306,99.085-84.434,131.002-122.395C495.367,259.578,512,219.954,512,177.351 C512,138.213,498.733,101.605,474.644,74.27z M309.193,401.614c-17.08,14.554-34.658,29.533-53.193,45.646 c-18.534-16.111-36.113-31.091-53.196-45.648C98.745,312.939,30,254.358,30,177.351c0-31.83,10.605-61.394,29.862-83.245 C79.34,72.007,106.379,59.836,136,59.836c41.129,0,67.716,25.338,82.776,46.594c13.509,19.064,20.558,38.282,22.962,45.659 c2.011,6.175,7.768,10.354,14.262,10.354c6.494,0,12.251-4.179,14.262-10.354c2.404-7.377,9.453-26.595,22.962-45.66 c15.06-21.255,41.647-46.593,82.776-46.593c29.621,0,56.66,12.171,76.137,34.27C471.395,115.957,482,145.521,482,177.351 C482,254.358,413.255,312.939,309.193,401.614z"
+                                                ></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="ab b2">
+                                    <div style="margin-right: 8px">Quick View</div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 511.999 511.999"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        role="presentation"
+                                        class="icon icon-eyes"
+                                    >
+                                        <path
+                                            d=" M508.745,246.041c-4.574-6.257-113.557-153.206-252.748-153.206S7.818,239.784,3.249,246.035 c-4.332,5.936-4.332,13.987,0,19.923c4.569,6.257,113.557,153.206,252.748,153.206s248.174-146.95,252.748-153.201 C513.083,260.028,513.083,251.971,508.745,246.041z M255.997,385.406c-102.529,0-191.33-97.533-217.617-129.418 c26.253-31.913,114.868-129.395,217.617-129.395c102.524,0,191.319,97.516,217.617,129.418 C447.361,287.923,358.746,385.406,255.997,385.406z"
+                                        ></path>
+                                        <path
+                                            d="M255.997,154.725c-55.842,0-101.275,45.433-101.275,101.275s45.433,101.275,101.275,101.275  s101.275-45.433,101.275-101.275S311.839,154.725,255.997,154.725z M255.997,323.516c-37.23,0-67.516-30.287-67.516-67.516 s30.287-67.516,67.516-67.516s67.516,30.287,67.516,67.516S293.227,323.516,255.997,323.516z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <button class="home-add-btn">QUICK ADD</button>
+                            </div>
+                            <div id="product-details">
+                                <p class="sold-out"></p>
+                                <a href="" class="sh">Panjabi:Semi Fit_Print_361#3</a>
+                                <p>Tk 2,890.00</p>
+                            </div>
+                        </div>
+                        <div class="details" id="product-more-details">
+                            <a>Black Regular Fit Panjabi for Men 172#4</a>
+                            <p>
+                                Black stripe brings a more formal, evening-ready character to the
+                                Regular Fit lineup, moving beyond the usual light and neutral
+                                shades. This elegant panjabi is made from blended cotton, adding a
+                                bit more structure and durability than pure cotton, and holds its
+                                shape well through long wear at weddings or festive gatherings. The
+                                Regular Fit keeps the traditional relaxed silhouette, offering
+                                comfort and ease of movement rather than a closer, tailored cut.
+                                Pair with white or black pajama for a striking, classic finish.
+                            </p>
+                            <span>Tk 3,190.00</span>
+                            <button class="show-more-products-button">QUICK ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="show-more-products">Showing 1 -50 of 233 total</p>
+                <div class="show-more-tracker">
+                    <div class="show-more-slider"></div>
+                </div>
+                <button class="show-more-products-button">SHOW MORE</button>
+            </div>
+        </div>
+        <footer id="footer">
+            <!-- Will be inserted by JS -->
+        </footer>
+        <script src="common.js"></script>
+        <script src="product.js"></script>
+    </body>
+</html>
